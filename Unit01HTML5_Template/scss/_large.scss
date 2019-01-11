@@ -3,6 +3,27 @@ main{
   margin: 0 auto;
 }
 
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .searchBar {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+    input, button{
+      height: 30px;
+    }
+
+    input {
+      width: 100%;
+    }
+    
+  }
+}
+
 .info {
   display: flex;
   flex-direction: row;
@@ -15,7 +36,7 @@ main{
   display: flex;
   flex-direction: column;
   input{
-    height: 30px;
+    height: 44px;
   }
   button{
     height: 40px;
