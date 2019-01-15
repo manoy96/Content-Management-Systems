@@ -1,0 +1,8 @@
+{
+    "files.autoSave": "afterDelay",
+    "breadcrumbs.enabled": true,
+    "scss.lint.duplicateProperties": "warning",
+    "scss.lint.float": "warning",
+    "scss.lint.hexColorLength": "warning",
+    "scss.lint.importStatement": "warning"
+}

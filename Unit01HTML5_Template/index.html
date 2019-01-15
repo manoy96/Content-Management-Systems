@@ -24,18 +24,21 @@
   <!-- NAVIGATION -->
 
     <div class="navigation">
-      <nav>
+      <nav class="clearfix">
         <ul>
-          <a href="#"><li>HOME</li></a> |
-          <a href="#"><li>CRUISES</li></a> |
-          <a href="#"><li>AGENTS</li></a> |
-          <a href="#"><li>BOOK</li></a>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
         </ul>
-        <div class="searchBar">
-            <input type="text" name="" id="search">
-            <button type="submit"><i class="fas fa-search"></i></button>
-        </div>
       </nav>
+    
     </div>
 
     <main>
@@ -119,6 +122,6 @@
 
 
 
-    
+    <script src="js/menuToggle.js"></script>
 </body>
 </html>
