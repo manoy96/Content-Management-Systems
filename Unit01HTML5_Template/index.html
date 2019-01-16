@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/solid.css" integrity="sha384-+0VIRx+yz1WBcCTXBkVQYIBVNEFH1eP6Zknm16roZCyeNg2maWEpk/l/KsyFKs7G" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/brands.css" integrity="sha384-1KLgFVb/gHrlDGLFPgMbeedi6tQBLcWvyNUN+YKXbD7ZFbjX6BLpMDf0PJ32XJfX" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0" crossorigin="anonymous">
+<link href="css/styles.css" rel="stylesheet">
+<link href="slick/slick.css" rel="stylesheet">
+<link href="slick/slick-theme.css" rel="stylesheet">
   <script src="main.js"></script>
 </head>
 <body>
@@ -24,26 +27,59 @@
   <!-- NAVIGATION -->
 
     <div class="navigation">
-      <nav class="clearfix">
+      <nav>
+        
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#news">News</a></li>
+          <li><a href="#news">Cruises</a></li>
           <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+            <a href="javascript:void(0)" class="dropbtn">Agents</a>
             <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+              <a href="#">Angela</a>
+              <a href="#">Tony</a>
+              <a href="#">Gary</a>
             </div>
           </li>
+          <li><a href="#news">Book</a></li>
         </ul>
+        <div class="searchBar">
+            <input type="text" name="" id="search">
+            <button type="submit"><i class="fas fa-search fa-2x"></i></button>
+        </div>
       </nav>
     
     </div>
 
     <main>
 
-      <div class="slider"></div>
+      <div class="mySlider">
+        <picture>
+          <source srcset="images/slider01h.jpg" media="(min-width: 29.25rem)">
+          <img srcset="images/slider01s.jpg" alt="slider">
+        </picture>
+  
+        <picture>
+            <source srcset="images/slider02h.jpg" media="(min-width: 29.25rem)">
+            <img srcset="images/slider02s.jpg" alt="slider">
+          </picture>
+  
+          <picture>
+              <source srcset="images/slider03h.jpg" media="(min-width: 29.25rem)">
+              <img srcset="images/slider03s.jpg" alt="slider">
+            </picture>
+  
+            <picture>
+                <source srcset="images/slider04h.jpg" media="(min-width: 29.25rem)">
+                <img srcset="images/slider04s.jpg" alt="slider">
+              </picture>
+  
+              <picture>
+                  <source srcset="images/slider05h.jpg" media="(min-width: 29.25rem)">
+                  <img srcset="images/slider05s.jpg" alt="slider">
+                </picture>
+    </div><!-- end slider -------------------- -->
+  
+      <!-- <div class="slider"></div> -->
 
       <h2 id="blog">Recent Blog Articles</h2>
       <div class="articles">
@@ -122,6 +158,19 @@
 
 
 
-    <script src="js/menuToggle.js"></script>
+    <script src="slick/jquery-3.3.1.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.mySlider').slick({
+          autoplay:true,
+          dots:true,
+          arrows:false,
+          cssEase: 'ease-out',
+          speed:2000,
+          autoplaySpeed:8000
+        });
+      });
+    </script>
 </body>
 </html>
