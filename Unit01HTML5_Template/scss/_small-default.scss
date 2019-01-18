@@ -48,6 +48,16 @@ nav {
   }
 }
 
+.mySlider {
+
+  picture {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
 
 .slider{
   width: 100%;
@@ -59,18 +69,18 @@ h2#blog {
 }
 .articles {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 3rem;
 
   .art1, .art2, .art3, .art4{
-    width: 25%;
-    height: 200px;
-    background-color: pink;
-    margin: 0 1rem;
+    // width: 100%;
+    height: 250px;
+    background-color: #666;
+    margin: 1rem $gutter;
     
     p {
-      color: red;
+      color: #fff;
     }
   }
 }
@@ -132,7 +142,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: $secondaryColor;
 }
 
 li {
