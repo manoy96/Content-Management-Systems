@@ -15,18 +15,28 @@
   <script src="main.js"></script>
 </head>
 <body>
-  <!-- HEADER -->
-  <div class="headwrap">
-
-    <header>
-      <img src="img/dgm3740_logo-01.png" alt="logo" style="width: 120px; height: 120px;">
-      <a href="tel:8017241381">801-724-1381</a>
-    </header>
-  </div>
-
   <!-- NAVIGATION -->
 
-    <div class="navigation">
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+
+<div class="myNav">
+    <span onclick="openNav()" id="menuBar"><i class="fas fa-bars fa-3x"></i></span>
+  <div class="search">
+    <input type="search">
+    <button type="submit"><i class="fas fa-search fa-2x"></i></button>
+  </div>
+  <!-- Use any element to open the sidenav -->
+  
+</div>
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <!-- <div class="navigation">
       <nav>
         
         <ul>
@@ -48,7 +58,17 @@
         </div>
       </nav>
     
-    </div>
+    </div> -->
+
+      <!-- HEADER -->
+  <div class="headwrap">
+
+    <header>
+      <img src="img/dgm3740_logo-01.png" alt="logo" style="width: 120px; height: 120px;">
+      <a href="tel:8017241381">801-724-1381</a>
+    </header>
+  </div>
+
 
     <main>
 
@@ -171,6 +191,16 @@
           autoplaySpeed:8000
         });
       });
+
+      /* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
     </script>
 </body>
 </html>
