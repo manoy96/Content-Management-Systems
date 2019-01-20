@@ -83,9 +83,14 @@ nav {
   }
 }
 
+
+.articles {
+  grid-template-columns: auto auto auto auto;
+}
+
 .info {
-  display: flex;
-  flex-direction: row;
+  // display: flex;
+  // flex-direction: row;
 
 .contact, .newsletter, .why {
   width: 33%;

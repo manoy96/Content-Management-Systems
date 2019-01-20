@@ -45,31 +45,40 @@ header {
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-/* The navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+  
+  /* The navigation menu links */
+  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    h2 {
+      text-align: center;
+    }
+  }
+  /* When you mouse over the navigation links, change their color */
+  a:hover {
   color: #f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  /* Position and style the close button (top right corner) */
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
+}
+
+
+
+
+
+
+
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
@@ -79,11 +88,27 @@ header {
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
+  .sidenav {padding-top: 15px; background-color: $menuColor;}
   .sidenav a {font-size: 18px;}
 }
 
+.sidenav{
+  background-color: $menuColor; 
+  
+  a {
 
+    h2 {
+      color: $thirdColor;
+    }
+  }
+  .myAgents {
+    
+    h2 {
+      padding-left: 1.5rem;
+      color: darken($thirdColor, 25%);
+    }
+  }
+}
 
 
 
@@ -92,6 +117,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: $thirdColor;
 
   .search {
     display: flex;
@@ -101,33 +127,23 @@ header {
       height: 44px;
       width: 100%;
     }
+    button {
+      background-color: $primaryColor;
+      color: $thirdColor;
+  }
   }
 
   #menuBar {
-    color: primaryColor;
-    margin: .25rem 0 .15rem .25rem;
+    color: $primaryColor;
+    margin: .3rem 0 .15rem .3rem;
   }
 
 }
-// .navigation {
-//   background-color: $secondaryColor;
-// }
-// nav {
-//   max-width: 1024px;
-//   margin: 0 auto;
-//   padding: .75rem 0;
-//   ul{
-//     display: flex;
-//     flex-direction: row;
+.navigation {
+  // background-color: $secondaryColor;
+  display: none;
+}
 
-//     a {
-//       text-decoration: none;
-//       color: #000000;
-//       margin: 0 .4rem;
-//     }
-
-//   }
-// }
 
 .mySlider {
 
@@ -138,6 +154,12 @@ header {
       width: 100%;
     }
   }
+  .slick-dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #fff;
+  }
 }
 
 .slider{
@@ -146,13 +168,16 @@ header {
   background-color: rgb(255, 131, 131);
 }
 h2#blog {
-  margin: 2rem 0 .25rem 0;
+  margin: 2rem 0 .25rem $gutter;
 }
 .articles {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 3rem;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  // margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: $gutter;
 
   .art1, .art2, .art3, .art4{
     // width: 100%;
@@ -177,12 +202,57 @@ h2#blog {
     .info {
       padding: 1rem 0;
       margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      color: $thirdColor;
+
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas: 
+        "contact"
+        "newsletter"
+        "why";
+
+
+
       .contact, .newsletter, .why {
         padding: .5rem $gutter;
       }
+
+      .contact {
+        grid-area: contact;
+      }
+
+      .newsletter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        grid-area: newsletter;
+
+        .subscribe {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+  
+          input{
+            height: 35px;
+            margin-bottom: .2rem;
+          }
+  
+          button {
+            height: 44px;
+            background-color: #666;
+            border-radius: 10px;
+            color: #fff;
+          }
+        }
+      }
+
+      .why {
+        grid-area: why;
+      }
+
+      
 
       h2{
         margin-bottom: .75rem;
@@ -215,6 +285,7 @@ h2#blog {
   }
   p {
     color: #ffffff;
+    margin: 1rem 0;
   }
 
 

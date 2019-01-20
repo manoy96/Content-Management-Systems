@@ -5,13 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Page Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/solid.css" integrity="sha384-+0VIRx+yz1WBcCTXBkVQYIBVNEFH1eP6Zknm16roZCyeNg2maWEpk/l/KsyFKs7G" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/brands.css" integrity="sha384-1KLgFVb/gHrlDGLFPgMbeedi6tQBLcWvyNUN+YKXbD7ZFbjX6BLpMDf0PJ32XJfX" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0" crossorigin="anonymous">
 <link href="css/styles.css" rel="stylesheet">
 <link href="slick/slick.css" rel="stylesheet">
 <link href="slick/slick-theme.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
   <script src="main.js"></script>
 </head>
 <body>
@@ -20,10 +20,15 @@
 
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <a href="#"><h2>Home</h2></a>
+    <a href="#"><h2>Cruises</h2></a>
+    <a href="#"><h2>Agents</h2></a>
+        <div class="myAgents">
+          <a href="#"><h2>Angela</h2></a>
+          <a href="#"><h2>Tony</h2></a>
+          <a href="#"><h2>Gary</h2></a>
+        </div>
+    <a href="#"><h2>Book</h2></a>
   </div>
 
 <div class="myNav">
@@ -35,30 +40,6 @@
   <!-- Use any element to open the sidenav -->
   
 </div>
-  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-    <!-- <div class="navigation">
-      <nav>
-        
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#news">Cruises</a></li>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Agents</a>
-            <div class="dropdown-content">
-              <a href="#">Angela</a>
-              <a href="#">Tony</a>
-              <a href="#">Gary</a>
-            </div>
-          </li>
-          <li><a href="#news">Book</a></li>
-        </ul>
-        <div class="searchBar">
-            <input type="text" name="" id="search">
-            <button type="submit"><i class="fas fa-search fa-2x"></i></button>
-        </div>
-      </nav>
-    
-    </div> -->
 
       <!-- HEADER -->
   <div class="headwrap">
@@ -69,6 +50,30 @@
     </header>
   </div>
 
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div class="navigation">
+    <nav class="medPlus">
+      
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">Cruises</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Agents</a>
+          <div class="dropdown-content">
+            <a href="#">Angela</a>
+            <a href="#">Tony</a>
+            <a href="#">Gary</a>
+          </div>
+        </li>
+        <li><a href="#news">Book</a></li>
+      </ul>
+      <div class="searchBar">
+          <input type="text" name="" id="search">
+          <button type="submit"><i class="fas fa-search fa-2x"></i></button>
+      </div>
+    </nav>
+  
+  </div>
 
     <main>
 
