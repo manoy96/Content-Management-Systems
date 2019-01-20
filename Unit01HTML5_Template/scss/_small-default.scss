@@ -205,8 +205,6 @@ h2#blog {
       color: $thirdColor;
 
       display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: auto;
       grid-template-areas: 
         "contact"
         "newsletter"

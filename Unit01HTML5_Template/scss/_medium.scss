@@ -50,11 +50,10 @@
 }
 
 .info {
-    display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-      "contact newsletter"
-      "why";
+      "contact  newsletter"
+      "why  why";
 
 }
 
