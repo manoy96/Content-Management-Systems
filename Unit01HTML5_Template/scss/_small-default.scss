@@ -1,5 +1,11 @@
 body{
   background-color: #ffffff;
+  h2 {
+    font-family: $titleFont;
+  }
+  p {
+    font-family: $defaultFont;
+  }
 }
 
 .headwrap {
@@ -196,29 +202,26 @@ h2#blog {
 
   footer {
     max-width: 1024px;
-    margin: 0 auto;
+    margin: 0 $gutter;
+    padding: 1rem 0;
+    color: $thirdColor;
    
 
     .info {
-      padding: 1rem 0;
       margin: 0 auto;
       color: $thirdColor;
 
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-areas: 
-        "contact"
-        "newsletter"
-        "why";
+      display: flex;
+      flex-direction: column;
+
 
 
 
       .contact, .newsletter, .why {
-        padding: .5rem $gutter;
+        padding: .5rem 0;
       }
 
       .contact {
-        grid-area: contact;
       }
 
       .newsletter {
@@ -226,7 +229,6 @@ h2#blog {
         flex-direction: column;
         justify-content: center;
 
-        grid-area: newsletter;
 
         .subscribe {
           display: flex;
@@ -248,7 +250,6 @@ h2#blog {
       }
 
       .why {
-        grid-area: why;
       }
 
       
