@@ -51,10 +51,10 @@
 
 .info {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-      "contact  newsletter"
-      "why  why";
-
+      "contact newsletter"
+      "why why";
 }
 
 .copyright {
