@@ -85,7 +85,7 @@ nav {
 
 
 .articles {
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .info {
@@ -112,9 +112,19 @@ nav {
 
 
 }
-
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.footer {
+  footer {
+     .info {
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-areas: 
+          "contact newsletter why";
+      //   flex-direction: row;
+      //   justify-content: space-between;
+    }
+  }
 }
+// footer {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
