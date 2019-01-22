@@ -132,6 +132,7 @@ header {
       border: solid #666 1px;
       height: 44px;
       width: 100%;
+      padding-left: 1rem;
     }
     button {
       background-color: $primaryColor;
@@ -190,10 +191,51 @@ h2#blog {
     height: 250px;
     background-color: #666;
     margin: 1rem $gutter;
+
+    background-position: center center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .titleOverlay{
+      height: 25%;
+      width: 100%;
+      background-color: rgba(102,102,102,.5);
+      z-index: 2;
     
-    p {
-      color: #fff;
+      h2 {
+        color: #fff;
+        text-align: center;
+        padding: 1.5rem 0;
+      }
     }
+    .publishDate {
+      height: 15%;
+      width: 100%;
+      background-color: rgba(102,102,102,.5);
+      z-index: 2;
+      bottom: 0;
+
+      p{
+        color: #fff;
+        text-align: center;
+        padding: .5rem 0;
+
+      }
+    }
+  }
+  .art1 {
+    background-image: url('../images/articles/pineapple-supply-co-64393-unsplash.jpg');
+  }
+  .art2{
+    background-image: url('../images/articles/simon-migaj-471526-unsplash.jpg');
+  }
+  .art3{
+    background-image: url('../images/articles/spencer-pugh-192572-unsplash.jpg');
+  }
+  .art4{
+    background-image: url('../images/articles/vicko-mozara-324955-unsplash.jpg');
   }
 }
 
@@ -254,7 +296,7 @@ h2#blog {
           button {
             height: 44px;
             background-color: #666;
-            border-radius: 10px;
+            border-radius: 15px;
             color: #fff;
           }
         }
