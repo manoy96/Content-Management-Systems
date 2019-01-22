@@ -182,10 +182,10 @@ h2#blog {
   // justify-content: space-between;
   // margin-bottom: 3rem;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: $gutter;
 
-  .art1, .art2, .art3, .art4{
+  .art1, .art2, .art3, .art4 {
     // width: 100%;
     height: 250px;
     background-color: #666;
@@ -211,8 +211,17 @@ h2#blog {
       margin: 0 auto;
       color: $thirdColor;
 
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+
+      grid-template-areas: 
+        "contact"
+        "newsletter"
+        "why";
+
+      // display: flex;
+      // flex-direction: column;
 
 
 
@@ -222,12 +231,14 @@ h2#blog {
       }
 
       .contact {
+        grid-area: contact;
       }
 
       .newsletter {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        grid-area: newsletter;
 
 
         .subscribe {
@@ -250,6 +261,7 @@ h2#blog {
       }
 
       .why {
+        grid-area: why;
       }
 
       

@@ -46,14 +46,21 @@
 }
 
 .articles {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-footer {
-    
-    .info {
-        flex-direction: row;
+.footer {
+    footer {
+       .info {
+           grid-template-columns: 1fr 1fr;
+
+           grid-template-areas: 
+            "contact newsletter"
+            "why why";
+        //   flex-direction: row;
+        //   justify-content: space-between;
+      }
     }
-}
+  }
 
 
 .copyright {
