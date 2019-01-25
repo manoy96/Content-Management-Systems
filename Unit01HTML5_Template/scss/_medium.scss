@@ -1,53 +1,101 @@
+/* ----------NAVigation-----------  */
+nav{
+	position: relative;
+	ul.closed {display:block;}
+	button {display: none;}
+	
+	ul {
+		margin-left: 2%;
+	}
+	
+	ul li{float: left;}
+	
+	ul li a {
+		border: none;
+		border-right: 1px solid rgba(0,0,0,0.2);
+		padding: .7rem .9rem;
+		transition: background 0.3s linear;
+		-webkit-transition: background 0.3s linear;
+	}
+	
+	ul li a span {display: none;}
+	ul li a:hover{background-color: darken($menuColor, 10%);}
+	
+	ul li ul {
+		left: -999em;
+		z-index: 99;
+		background-color: lighten($menuColor, 10%);
+		position: absolute;
+		width: 10rem;
+	}
+	
+	ul li:hover ul {
+		left:auto;
+	}
+	
+	ul li ul li {
+		float: none;
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+	}
+	
+	
+	
+	
+	
+	
+}/*end navigation*/
 
-.navigation {
-    display: flex;
-    // align-items: center;
-    background-color: $thirdColor;
+// .navigation {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     // align-items: center;
+//     background-color: $thirdColor;
     
 
-    nav.medPlus {
-        max-width: $maxW;
-        padding: .25rem 0;
-        background-color: $thirdColor;
+//     nav.medPlus {
+//         max-width: $maxW;
+//         padding: .25rem 0;
+//         background-color: $thirdColor;
 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
         
-        ul{
-          display: flex;
-          flex-direction: row;
-          background-color: $thirdColor;
+//         ul{
+//           display: flex;
+//           flex-direction: row;
+//           background-color: $thirdColor;
       
-          a {
-            text-decoration: none;
-            color: #000000;
-            margin: 0 .4rem;
-          }
+//           a {
+//             text-decoration: none;
+//             color: #000000;
+//             margin: 0 .4rem;
+//           }
       
-        }
+//         }
 
-        .searchBar {
-            display: flex;
-            flex-direction: row;
-            align-items: stretch;
+//         .searchBar {
+//             display: flex;
+//             flex-direction: row;
+//             align-items: stretch;
 
-            input {
-                border: solid #666 1px;
-                width: 100%;
-                padding-left: 1rem;
-              }
-            button {
-                background-color: $primaryColor;
-                color: $thirdColor;
-            }
-        }
-      }
-}
+//             input {
+//                 border: solid #666 1px;
+//                 width: 100%;
+//                 padding-left: 1rem;
+//               }
+//             button {
+//                 background-color: $primaryColor;
+//                 color: $thirdColor;
+//             }
+//         }
+//     }
+// }
 
-.myNav {
-    display: none;
-}
+// .myNav {
+//     display: none;
+// }
 
 .articles {
     grid-template-columns: 1fr 1fr 1fr;

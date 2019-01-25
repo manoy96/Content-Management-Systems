@@ -18,7 +18,7 @@
   <!-- NAVIGATION -->
 
 
-  <div id="mySidenav" class="sidenav">
+  <!-- <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#"><h2>Home</h2></a>
     <a href="#"><h2>Cruises</h2></a>
@@ -37,9 +37,7 @@
     <input type="search" placeholder="search">
     <button type="submit"><i class="fas fa-search fa-2x"></i></button>
   </div>
-  <!-- Use any element to open the sidenav -->
-  
-</div>
+</div> -->
 
       <!-- HEADER -->
   <div class="headwrap">
@@ -50,10 +48,9 @@
     </header>
   </div>
 
-  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page
   <div class="navigation">
     <nav class="medPlus">
-      <div class="menu">
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#news">Cruises</a></li>
@@ -67,7 +64,6 @@
         </li>
         <li><a href="#news">Book</a></li>
       </ul>
-    </div>
     
       <div class="searchBar">
           <input type="text" name="" id="search" placeholder="search">
@@ -75,7 +71,34 @@
       </div>
     </nav>
   
-  </div>
+  </div> -->
+
+<!-- NAV STARTS HERE -->
+<nav class="clearfix">
+		<div class="navigation">
+			<button id="hamburgerBtn"><i class="fas fa-bars fa-3x"></i></button>
+   			<ul id="primaryNav" class="closed">
+				<li><a href="index.html"><span>HOME </span></a></li>
+					<li class="active"><a href="#"><span>ATTOURNEYS </span></a>
+					<ul>
+						<li><a href="index.html">Martha</a></li>
+						<li><a href="index.html">Terry</a></li>
+						<li><a href="index.html">Justin</a></li>
+						<li><a href="index.html">Daniel</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><span>PRACTICES</span></a>
+				<ul>
+						<li><a href="index.html">CIVIL LAW</a></li>
+						<li><a href="index.html">CRIMINAL LAW</a></li>
+					</ul>
+				</li>
+				<li><a href="index.html"><span>ABOUT</span></a></li>
+			</ul>
+		</div><!--end navigation-->
+  </nav><!--end nav-->
+  
+
 
     <main>
 
@@ -242,5 +265,6 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
     </script>
+  <script src="js/menuToggle.js"></script>
 </body>
 </html>
