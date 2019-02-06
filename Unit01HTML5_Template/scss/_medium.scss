@@ -1,3 +1,12 @@
+// HEADER
+.headwrap{
+	visibility: hidden;
+header {
+	visibility: hidden;
+	margin: 0 auto;
+}
+}
+
 /* ----------NAVigation-----------  */
 nav {
     // position: relative;
@@ -7,6 +16,8 @@ nav {
 	
 	ul {
 		margin-left: 2%;
+		display: flex;
+		flex-direction: row;
 	}
 	
 	ul li{float: left;}

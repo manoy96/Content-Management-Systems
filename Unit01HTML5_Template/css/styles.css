@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -86,19 +87,27 @@ hr {
 input, select {
   vertical-align: middle; }
 
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 body {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  padding-top: 47px; }
   body h2 {
     font-family: "Rajdhani", sans-serif; }
   body p {
     font-family: "Open Sans", sans-serif; }
 
 .headwrap {
-  background-color: #69AFBF; }
+  background-color: #69AFBF;
+  visibility: hidden; }
 
 header {
   max-width: 1200px;
-  margin: 47px auto 0 auto;
+  margin: 0 auto;
   padding: .5rem 0;
   display: flex;
   flex-direction: row;
@@ -114,62 +123,112 @@ header {
     color: #ffffff;
     padding-right: 1rem; }
 
+/* Navigation Button  -------------------------------------------------------- */
+body {
+  padding-top: 50px; }
+
 nav {
-  background-color: #567073;
-  z-index: 10; }
-  nav div.navigation {
-    background-color: #567073;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 10; }
-    nav div.navigation button#hamburgerBtn {
-      height: 44px;
-      color: #EBF2F0;
-      background-size: 86%;
-      background-position: center center;
-      border: 1px solid rgba(0, 0, 0, 0.2);
-      border-radius: 10px;
-      margin: 6px 0 6px 2%;
-      background-color: #69AFBF; }
-    nav div.navigation ul li a {
-      display: block;
-      color: #EBF2F0;
-      text-decoration: none;
-      padding: 1rem 40%;
-      border-bottom: solid 1px rgba(0, 0, 0, 0.3); }
-    nav div.navigation ul li.select a {
-      background-color: #6c8c90; }
-    nav div.navigation ul li.active {
-      display: flex;
-      flex-direction: column; }
-      nav div.navigation ul li.active a {
-        padding: 1rem 40%;
-        background-color: #567073; }
-      nav div.navigation ul li.active ul {
-        display: flex;
-        flex-direction: column; }
-        nav div.navigation ul li.active ul li a {
-          padding: 1rem 0 1rem 50%;
-          background-color: #EBF2F0;
-          color: #567073; }
-    nav div.navigation ul.closed {
-      display: none; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2.75rem;
+  background-color: #232D56;
+  /* change the menu color */ }
+
+#hamburgerBtn {
+  display: block;
+  width: 7rem;
+  height: 2.75rem;
+  background-image: url("../images/menuOpenWhite.png");
+  background-color: rgba(0, 0, 0, 0.1);
+  background-position: 2vw center;
+  background-repeat: no-repeat;
+  border: 0 none; }
+
+#hamburgerBtn.open {
+  background: url("../images/menuCloseWhite.png");
+  background-position: 2vw center;
+  background-repeat: no-repeat; }
+
+/* Navigation Bar -------------------------------------------------------- */
+#primaryNav {
+  height: 0;
+  overflow: hidden;
+  width: 20rem;
+  background-color: #232D56;
+  /* change the menu color */
+  margin: 0;
+  padding: 0;
+  z-index: 998;
+  font-family: Verdana;
+  font-weight: normal; }
+
+#primaryNav li.active a {
+  background-color: rgba(0, 0, 0, 0.25); }
+
+#primaryNav li a {
+  display: block;
+  width: 100%;
+  padding: .75rem 2vw;
+  font-size: 14px;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15);
+  color: white;
+  text-decoration: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.2); }
+
+#primaryNav li a:hover {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+/* Toggle the navigation bar to expand down  */
+#primaryNav.open {
+  height: auto; }
+
+/* Submenus – optional .parent class indicates dropdowns */
+#primaryNav > li:hover > a {
+  background: rgba(0, 0, 0, 0.5); }
+
+#primaryNav li.parent > a:after {
+  z-index: 12;
+  font-size: .75rem;
+  content: "\25BC";
+  color: rgba(255, 255, 255, 0.5);
+  float: right; }
+
+#primaryNav li.parent > a:hover {
+  background: rgba(0, 0, 0, 0.75); }
+
+/*hide the sub menu items by default*/
+#primaryNav li ul {
+  display: none;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0; }
+
+#primaryNav li ul a {
+  border-top: solid 1px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  padding: 10px 5%;
+  font-weight: normal; }
+
+#primaryNav li:hover ul {
+  display: block; }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
   padding: 20px; }
 
-.mySlider picture {
-  width: 100%; }
-  .mySlider picture img {
+.mySlider {
+  visibility: hidden; }
+  .mySlider picture {
     width: 100%; }
-.mySlider .slick-dots {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #fff; }
+    .mySlider picture img {
+      width: 100%; }
+  .mySlider .slick-dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #fff; }
 
 .slider {
   width: 100%;
@@ -296,13 +355,21 @@ h2#blog {
   clear: both; }
 
 @media only screen and (min-width: 560px) {
+  .headwrap {
+    visibility: hidden; }
+    .headwrap header {
+      visibility: hidden;
+      margin: 0 auto; }
+
   /* ----------NAVigation-----------  */
   nav ul.closed {
     display: block; }
   nav button {
     display: none; }
   nav ul {
-    margin-left: 2%; }
+    margin-left: 2%;
+    display: flex;
+    flex-direction: row; }
   nav ul li {
     float: left; }
   nav ul li a {

@@ -1,187 +1,226 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Page Title</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/solid.css" integrity="sha384-+0VIRx+yz1WBcCTXBkVQYIBVNEFH1eP6Zknm16roZCyeNg2maWEpk/l/KsyFKs7G" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/brands.css" integrity="sha384-1KLgFVb/gHrlDGLFPgMbeedi6tQBLcWvyNUN+YKXbD7ZFbjX6BLpMDf0PJ32XJfX" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0" crossorigin="anonymous">
-<link href="slick/slick.css" rel="stylesheet">
-<link href="slick/slick-theme.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
-<link href="css/styles.css" rel="stylesheet">
-  <script src="main.js"></script>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Page Title</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/solid.css" integrity="sha384-+0VIRx+yz1WBcCTXBkVQYIBVNEFH1eP6Zknm16roZCyeNg2maWEpk/l/KsyFKs7G"
+      crossorigin="anonymous">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/brands.css" integrity="sha384-1KLgFVb/gHrlDGLFPgMbeedi6tQBLcWvyNUN+YKXbD7ZFbjX6BLpMDf0PJ32XJfX"
+      crossorigin="anonymous">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0" crossorigin="anonymous">
+   <link href="slick/slick.css" rel="stylesheet">
+   <link href="slick/slick-theme.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+   <script src="main.js"></script>
 </head>
+
 <body>
-      <!---------- HEADER ------------>
-  <div class="headwrap">
+   <!---------- HEADER ------------>
+   <div class="headwrap">
 
-    <header>
-      <img src="img/dgm3740_logo-01.png" alt="logo" style="width: 120px; height: 120px;">
-      <a href="tel:8017241381">801-724-1381</a>
-    </header>
-  </div>
+      <header>
+         <img src="img/dgm3740_logo-01.png" alt="logo" style="width: 120px; height: 120px;">
+         <a href="tel:8017241381">801-724-1381</a>
+      </header>
+   </div>
 
- 
 
-<!-- NAV STARTS HERE -->
-<nav class="clearfix">
+   <!-- NAV STARTS HERE -->
+   <nav class="clearfix">
+      <button id="hamburgerBtn"></button>
+      <ul id="primaryNav">
+         <li><a href="index.html">TODAY'S DEALS</a></li>
+         <li class="parent"><a href="#">COMPANY MERCH</a>
+            <ul>
+               <li><a href="#">Shirts</a></li>
+               <li><a href="#">Key Chains</a></li>
+               <li><a href="#">Luggage Tags</a></li>
+               <li><a href="#">Hats</a></li>
+            </ul>
+         </li>
+         <li class="parent"><a href="#">CONSUMER MERCH</a>
+            <ul>
+               <li><a href="#">Shirts</a></li>
+               <li><a href="#">Hats</a></li>
+               <li><a href="#">Party Items</a></li>
+            </ul>
+         </li>
+         <li class="parent"><a href="#"> COMPANY INFO</a>
+            <ul>
+               <li><a href="index.html">Contact</a></li>
+               <li><a href="index.html">Careers</a></li>
+            </ul>
+         </li>
+         <li><a href="#">CART</a></li>
+         <li class="active"><a href="#">CHECKOUT</a></li>
+      </ul>
+   </nav>
+
+
+
+   <!-- <nav class="clearfix">
 		<div class="navigation">
 			<button id="hamburgerBtn"><i class="fas fa-bars fa-3x"></i></button>
    			<ul id="primaryNav" class="closed">
-        <li class="select"><a href="#">HOME</a></li>
-        <li><a href="#">CRUISES</a></li>
-        <li class="active">
-            <a href="#">AGENTS</a>
-            <ul>
-              <li><a href="#">Martha</a></li>
-              <li><a href="#">Terry</a></li>
-              <li><a href="#">Justin</a></li>
-              <li><a href="#">Daniel</a></li>
-            </ul>
-        </li>
+          <li class="select"><a href="#">HOME</a></li>
+          <li><a href="#">CRUISES</a></li>
+          <li class="active">
+              <a href="#">AGENTS</a>
+              <ul>
+                <li><a href="#">Martha</a></li>
+                <li><a href="#">Terry</a></li>
+                <li><a href="#">Justin</a></li>
+                <li><a href="#">Daniel</a></li>
+              </ul>
+          </li>
           <li><a href="#">BOOK</a></li>
 			</ul>
-		</div><!--end navigation-->
-  </nav><!--end nav-->
-  
+		</div> 
+  </nav> -->
 
 
-    <main>
+
+   <main>
 
       <div class="mySlider">
-        <picture>
-          <source srcset="images/slider01h.jpg" media="(min-width: 29.25rem)">
-          <img srcset="images/slider01s.jpg" alt="slider">
-        </picture>
-  
-        <picture>
+         <picture>
+            <source srcset="images/slider01h.jpg" media="(min-width: 29.25rem)">
+            <img srcset="images/slider01s.jpg" alt="slider">
+         </picture>
+
+         <picture>
             <source srcset="images/slider02h.jpg" media="(min-width: 29.25rem)">
             <img srcset="images/slider02s.jpg" alt="slider">
-          </picture>
-  
-          <picture>
-              <source srcset="images/slider03h.jpg" media="(min-width: 29.25rem)">
-              <img srcset="images/slider03s.jpg" alt="slider">
-            </picture>
-  
-            <picture>
-                <source srcset="images/slider04h.jpg" media="(min-width: 29.25rem)">
-                <img srcset="images/slider04s.jpg" alt="slider">
-              </picture>
-  
-              <picture>
-                  <source srcset="images/slider05h.jpg" media="(min-width: 29.25rem)">
-                  <img srcset="images/slider05s.jpg" alt="slider">
-                </picture>
-    </div><!-- end slider -------------------- -->
-  
+         </picture>
+
+         <picture>
+            <source srcset="images/slider03h.jpg" media="(min-width: 29.25rem)">
+            <img srcset="images/slider03s.jpg" alt="slider">
+         </picture>
+
+         <picture>
+            <source srcset="images/slider04h.jpg" media="(min-width: 29.25rem)">
+            <img srcset="images/slider04s.jpg" alt="slider">
+         </picture>
+
+         <picture>
+            <source srcset="images/slider05h.jpg" media="(min-width: 29.25rem)">
+            <img srcset="images/slider05s.jpg" alt="slider">
+         </picture>
+      </div><!-- end slider -------------------- -->
+
       <!-- <div class="slider"></div> -->
 
       <h2 id="blog">Recent Blog Articles</h2>
       <div class="articles">
 
-        <div class="art1">
+         <div class="art1">
             <a href="#">
-          <div class="titleOverlay">
-          <h2>The Pinapple</h2>
-          </div>
-          <div class="publishDate">
-            <p>April, 1 2018</p>
-          </div>
-        </a>
-        </div>
-
-        <div class="art2">
-            <a href="#">
-            <div class="titleOverlay">
-            <h2>How to Relax</h2>
-            </div>
-            <div class="publishDate">
-              <p>April, 2 2018</p>
-            </div>
-          </a>
-          </div>
-
-          <div class="art3">
-              <a href="#">
-              <div class="titleOverlay">
-              <h2>Best Beach Resorts</h2>
-              </div>
-              <div class="publishDate">
-                <p>April, 3 2018</p>
-              </div>
+               <div class="titleOverlay">
+                  <h2>The Pinapple</h2>
+               </div>
+               <div class="publishDate">
+                  <p>April, 1 2018</p>
+               </div>
             </a>
+         </div>
+
+         <div class="art2">
+            <a href="#">
+               <div class="titleOverlay">
+                  <h2>How to Relax</h2>
+               </div>
+               <div class="publishDate">
+                  <p>April, 2 2018</p>
+               </div>
+            </a>
+         </div>
+
+         <div class="art3">
+            <a href="#">
+               <div class="titleOverlay">
+                  <h2>Best Beach Resorts</h2>
+               </div>
+               <div class="publishDate">
+                  <p>April, 3 2018</p>
+               </div>
+            </a>
+         </div>
+
+         <div class="art4">
+            <a href="#">
+               <div class="titleOverlay">
+                  <h2>Pool Hacks</h2>
+               </div>
+               <div class="publishDate">
+                  <p>April, 4 2018</p>
+               </div>
+            </a>
+         </div>
+
+      </div>
+
+   </main>
+
+   <div class="footer">
+      <footer>
+         <div class="info">
+            <div class="contact">
+               <h2>Contact Us</h2>
+               <p>CABOT CRUIZES</p>
+               <p>23 South Main St. Suite 16</p>
+               <p>Lexington, VA 24450</p>
+
+               <br>
+               <h2>Phone:</h2>
+               <p>1-800-555-1234</p>
+
+               <br>
+
+               <h2>Hours of Operation:</h2>
+               <p>Monday - Friday 9am - 4pm</p>
             </div>
 
-            <div class="art4">
-                <a href="#">
-                <div class="titleOverlay">
-                <h2>Pool Hacks</h2>
-                </div>
-                <div class="publishDate">
-                  <p>April, 4 2018</p>
-                </div>
-              </a>
-              </div>
-       
+            <div class="newsletter">
+               <h2>News Letter</h2>
+               <p>Subscribe to our email list and stay up-to-date with our hottest offers and latest specials.</p>
+
+               <div class="subscribe">
+                  <input type="email" name="" id="subscribeEmail">
+                  <button type="submit">Subscribe</button>
+               </div>
+            </div>
+
+
+            <div class="why">
+               <h2>Why Cabot Cruises?</h2>
+               <p>Cabot Cruises is a travel agency providing the best cruise deals on our online travel website.
+                  We can help
+                  you with all inclusive vacations including discounted cruises.</p>
+               <br>
+               <p>We do not sell travel to residents of Deleware, Iowa, Florida, Hawaii and Washington state
+                  because those
+                  states are just wierd. If you are a resident of one of these states, call your congressman and
+                  tell them to
+                  change the regulations. </p>
+            </div>
+
+         </div>
+      </footer>
+   </div>
+   <div class="copyright">
+      <div class="social">
+         <i class="fab fa-facebook-square fa-3x"></i>
+         <i class="fab fa-instagram fa-3x"></i>
+         <i class="fab fa-pinterest fa-3x"></i>
+         <i class="fab fa-twitter-square fa-3x"></i>
+         <i class="fab fa-youtube-square fa-3x"></i>
       </div>
-
-    </main>
-
-      <div class="footer">
-        <footer>
-          <div class="info">
-              <div class="contact">
-                <h2>Contact Us</h2>
-                <p>CABOT CRUIZES</p>
-                <p>23 South Main St. Suite 16</p>
-                <p>Lexington, VA 24450</p>
-                
-                <br>
-                <h2>Phone:</h2>
-                <p>1-800-555-1234</p>
-
-                <br>
-
-                <h2>Hours of Operation:</h2>
-                <p>Monday - Friday 9am - 4pm</p>
-              </div>
-
-              <div class="newsletter">
-                <h2>News Letter</h2>
-                <p>Subscribe to our email list and stay up-to-date with our hottest offers and latest specials.</p>
-
-                <div class="subscribe">
-                    <input type="email" name="" id="subscribeEmail">
-                    <button type="submit">Subscribe</button>
-                </div>
-              </div>
-            
-
-              <div class="why">
-                <h2>Why Cabot Cruises?</h2>
-                <p>Cabot Cruises is a travel agency providing the best cruise deals on our online travel website. We can help you with all inclusive vacations including discounted cruises.</p>
-                <br>
-                <p>We do not sell travel to residents of Deleware, Iowa, Florida, Hawaii and Washington state because those states are just wierd. If you are a resident of one of these states, call your congressman and tell them to change the regulations. </p>
-              </div>
-                 
-            </div>  
-        </footer>
-      </div>
-    <div class="copyright">
-        <div class="social">
-            <i class="fab fa-facebook-square fa-3x"></i>
-            <i class="fab fa-instagram fa-3x"></i>
-            <i class="fab fa-pinterest fa-3x"></i>
-            <i class="fab fa-twitter-square fa-3x"></i>
-            <i class="fab fa-youtube-square fa-3x"></i>
-        </div>
-        <p>&copy; 2019 Manuel Espinoza</p>
-    </div>
-      
+      <p>&copy; 2019 Manuel Espinoza</p>
+   </div>
 
 
 
@@ -189,31 +228,33 @@
 
 
 
+   <!-- SCRIPTS -->
 
-    <script src="slick/jquery-3.3.1.js"></script>
-    <script src="slick/slick.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        $('.mySlider').slick({
-          autoplay:true,
-          dots:true,
-          arrows:false,
-          cssEase: 'ease-out',
-          speed:2000,
-          autoplaySpeed:8000
-        });
+   <script src="slick/jquery-3.3.1.js"></script>
+   <script src="slick/slick.min.js"></script>
+   <script>
+      $(document).ready(function () {
+         $('.mySlider').slick({
+            autoplay: true,
+            dots: true,
+            arrows: false,
+            cssEase: 'ease-out',
+            speed: 2000,
+            autoplaySpeed: 8000
+         });
       });
 
-      /* Set the width of the side navigation to 250px */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+      // /* Set the width of the side navigation to 250px */
+      // function openNav() {
+      //    document.getElementById("mySidenav").style.width = "250px";
+      // }
 
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-    </script>
-  <script src="js/menuToggle.js"></script>
+      // /* Set the width of the side navigation to 0 */
+      // function closeNav() {
+      //    document.getElementById("mySidenav").style.width = "0";
+      // }
+   </script>
+   <script src="js/menuToggle.js"></script>
 </body>
+
 </html>
