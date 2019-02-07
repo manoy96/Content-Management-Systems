@@ -21,7 +21,6 @@ body {
 
 .headwrap {
    background-color: $primaryColor;
-   visibility: hidden;
 }
 
 header {
@@ -101,6 +100,10 @@ nav {
    z-index: 998;
    font-family: Verdana;
    font-weight: normal;
+
+   li {
+      background-color: $accent;
+   }
 }
 
 #primaryNav li.active a {
@@ -120,7 +123,7 @@ nav {
 }
 
 #primaryNav li a:hover {
-   background-color: darken($secondaryColor, 15%);
+   background-color: darken($accent, 15%);
 }
 
 /* Toggle the navigation bar to expand down  */
@@ -130,7 +133,7 @@ nav {
 
 /* Submenus – optional .parent class indicates dropdowns */
 #primaryNav>li:hover>a {
-   background-color: darken($secondaryColor, 15%);
+   background-color: darken($accent, 15%);
 }
 
 #primaryNav li.parent>a:after {
@@ -142,7 +145,7 @@ nav {
 }
 
 #primaryNav li.parent>a:hover {
-   background-color: darken($secondaryColor, 25%);
+   background-color: darken($accent, 25%);
 }
 
 /*hide the sub menu items by default*/
@@ -157,6 +160,7 @@ nav {
    font-size: 16px;
    padding: 10px 5%;
    font-weight: normal;
+   background-color: darken($accent, 15%);
 }
 
 #primaryNav li:hover ul {
@@ -264,7 +268,7 @@ nav {
 
 
 .mySlider {
-   visibility: hidden;
+   z-index: -1;
 
    picture {
       width: 100%;
@@ -456,7 +460,8 @@ h2#blog {
 
                button {
                   height: 44px;
-                  background-color: #666;
+                  background-color: $primaryColor;
+                  border: none;
                   border-radius: 15px;
                   color: #fff;
                }
