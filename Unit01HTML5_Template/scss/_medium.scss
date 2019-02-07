@@ -8,7 +8,11 @@ header {
 
 /* NAVigation  */
 nav {
-	background-color:$menuColor;
+	background-color:$secondaryColor;
+	button {
+		display: none;
+		i {display: none;}
+	}
 
 	// new stuff
 	ul {
@@ -57,55 +61,55 @@ nav {
 
 
 
-// /* ----------NAVigation-----------  */
-// nav {
-//     // position: relative;
-//     // top: 0;
-// 	ul.closed {display:block;}
-// 	button {display: none;}
+/* ----------NAVigation-----------  */
+nav {
+    // position: relative;
+    // top: 0;
+	ul.closed {display:block;}
+	button {display: none;}
 	
-// 	ul {
-// 		margin-left: 2%;
-// 		display: flex;
-// 		flex-direction: row;
-// 	}
+	ul {
+		margin-left: 2%;
+		display: flex;
+		flex-direction: row;
+	}
 	
-// 	ul li{float: left;}
+	ul li{float: left;}
 	
-// 	ul li a {
-// 		border: none;
-// 		border-right: 1px solid rgba(0,0,0,0.2);
-// 		padding: .7rem .9rem;
-// 		transition: background 0.3s linear;
-// 		-webkit-transition: background 0.3s linear;
-// 	}
+	ul li a {
+		border: none;
+		border-right: 1px solid rgba(0,0,0,0.2);
+		padding: .7rem .9rem;
+		transition: background 0.3s linear;
+		-webkit-transition: background 0.3s linear;
+	}
 	
-// 	ul li a span {display: none;}
-// 	ul li a:hover{background-color: darken($menuColor, 10%);}
+	ul li a span {display: none;}
+	ul li a:hover{background-color: darken($menuColor, 10%);}
 	
-// 	ul li ul {
-// 		left: -999em;
-// 		z-index: 99;
-// 		background-color: lighten($menuColor, 10%);
-// 		position: absolute;
-// 		width: 10rem;
-// 	}
+	ul li ul {
+		left: -999em;
+		z-index: 99;
+		background-color: lighten($menuColor, 10%);
+		position: absolute;
+		width: 10rem;
+	}
 	
-// 	ul li:hover ul {
-// 		left:auto;
-// 	}
+	ul li:hover ul {
+		left:auto;
+	}
 	
-// 	ul li ul li {
-// 		float: none;
-// 		border-bottom: 1px solid rgba(0,0,0,0.2);
-// 	}
-	
-	
+	ul li ul li {
+		float: none;
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+	}
 	
 	
 	
 	
-// }/*end navigation*/
+	
+	
+}/*end navigation*/
 
 
 
