@@ -155,7 +155,7 @@ nav {
 #primaryNav {
   height: 0;
   overflow: hidden;
-  width: 20rem;
+  width: 100%;
   background-color: #232D56;
   /* change the menu color */
   margin: 0;
