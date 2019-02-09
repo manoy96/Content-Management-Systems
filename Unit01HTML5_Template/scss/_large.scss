@@ -1,3 +1,4 @@
+
 main{
   max-width: $maxW;
   margin: 0 auto;
@@ -9,24 +10,35 @@ header {
 
 
 /* ------------NAVigation-----------  */
-nav.clearfix {
-	background-color: $secondaryColor;
-	margin: 0 auto;
-	width: 100%;
-	ul li a span {display: inline;}
-	.navigation{
-		max-width: 75rem;
-		margin: 0 auto;
-		background-color: $secondaryColor;
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+  max-width: 1200px;
+  // width: 100%;
+
+  
+  margin: 0 auto;
+}
+
+.dropdown-content {
+  min-width: 200px;
+}
+
+
+
+
+// nav.clearfix {
+// 	background-color: $secondaryColor;
+// 	margin: 0 auto;
+// 	width: 100%;
+// 	ul li a span {display: inline;}
+// 	.navigation{
+// 		max-width: 75rem;
+// 		margin: 0 auto;
+// 		background-color: $secondaryColor;
 		
-		
-		
-	}
-	
-	
-	
-	
-}//END NAV
+// 	}
+// }//END NAV
 
 
 
