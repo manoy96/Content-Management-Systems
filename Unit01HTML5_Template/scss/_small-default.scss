@@ -117,8 +117,10 @@ header {
 }
 
 .dropdown:hover .dropContent {
-   display: block;
+   display: flex;
+   flex-direction: column; 
 }
+.dropdown:hover {}
 
 /* ------------- END OF DROPDOWN SNIPPET ------------ */
 
