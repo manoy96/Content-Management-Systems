@@ -95,6 +95,11 @@ header {
 }
 
 @media screen and (max-width: 600px) {
+   .navwrap {
+      width: 100%;
+      position: absolute;
+      top: 0;
+   }
    .topnav a {
       display: none;
    }
@@ -134,7 +139,7 @@ header {
       text-align: left;
    }
 
-   .top.responsive .dropdown {
+   .topnav.responsive .dropdown {
       float: none;
       display: block;
       text-align: left;
@@ -153,7 +158,8 @@ header {
 
 .dropdown {
    position: relative;
-   display: inline-block;
+   // display: inline-block;
+   // display: none;
    height: 100%;
 }
 
