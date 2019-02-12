@@ -1,12 +1,23 @@
 // HEADER
-.headwrap{
+.headwrap {
+  padding-top: 0px;
+  
 header {
 	margin: 0 auto;
 }
 }
 
 
-
+//NAVIGATION STYLES GO HERE
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  .dropdown-content {
+    margin-top: 45px;
+  }
+}
 	
 	
 	
