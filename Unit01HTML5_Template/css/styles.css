@@ -115,7 +115,7 @@ header {
     border-radius: 8px;
     max-height: 80px;
     max-width: 80px;
-    margin: .25rem; }
+    margin: .75rem; }
   header .phone {
     background-color: #91AAB4;
     margin: 1.5rem 0 1rem 0;
@@ -186,19 +186,29 @@ header {
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
-    top: 0; }
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .topnav.responsive .icon i {
+      align-self: flex-end; }
 
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
 
   .topnav.responsive .dropdown {
     float: none;
     display: block;
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
     .topnav.responsive .dropdown .dropbtn {
-      width: 100%; }
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
       .topnav.responsive .dropdown .dropbtn i {
         position: absolute;
         right: 1rem; }
@@ -208,12 +218,15 @@ header {
   .topnav.responsive .search {
     display: flex;
     flex-direction: row;
-    align-items: center; }
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
     .topnav.responsive .search input[type=search] {
       height: 40px;
       width: 80%;
       border: solid 1px #666;
       margin: 1rem 0;
+      padding-left: 1rem;
       border-radius: 7px 0 0 7px; }
     .topnav.responsive .search button {
       background-color: #FCFFF5;
@@ -341,20 +354,18 @@ h2#blog {
           padding: .5rem 0; }
   .articles .art1 {
     background-image: url("../images/articles/pineapple-supply-co-64393-unsplash.jpg"); }
-  .articles .art1:hover {
+  .articles .art1:hover, .articles .art2:hover, .articles .art3:hover, .articles .art4:hover {
     transition: .5s ease opacity;
     opacity: 1; }
   .articles .art2 {
     background-image: url("../images/articles/simon-migaj-471526-unsplash.jpg"); }
-  .articles .art2:hover {
-    opacity: 1; }
   .articles .art3 {
     background-image: url("../images/articles/spencer-pugh-192572-unsplash.jpg"); }
   .articles .art4 {
     background-image: url("../images/articles/vicko-mozara-324955-unsplash.jpg"); }
 
 .footer {
-  background-color: #193441; }
+  background-color: #91AAB4; }
   .footer footer {
     max-width: 1200px;
     margin: 0 2%;
@@ -381,12 +392,13 @@ h2#blog {
           justify-content: center; }
           .footer footer .info .newsletter .subscribe input {
             height: 35px;
-            margin-bottom: .2rem; }
+            border-radius: 7px 7px 0 0;
+            border: solid 1px #193441; }
           .footer footer .info .newsletter .subscribe button {
             height: 44px;
             background-color: #3E606F;
             border: none;
-            border-radius: 15px;
+            border-radius: 0 0 7px 7px;
             color: #fff; }
       .footer footer .info .why {
         grid-area: why; }
@@ -426,7 +438,7 @@ h2#blog {
       margin: 0 auto; }
       .headwrap header .phone {
         height: 60px;
-        margin-right: 2rem;
+        margin: 0 2rem 1rem 0;
         padding: 2rem .5rem .5rem .5rem; }
         .headwrap header .phone a {
           text-align: center; }
