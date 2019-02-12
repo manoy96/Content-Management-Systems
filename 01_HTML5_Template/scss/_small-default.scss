@@ -463,6 +463,10 @@ h2#blog {
 
          .contact {
             grid-area: contact;
+            a {
+               text-decoration: none;
+               color: $thirdColor;
+            }
          }
 
          .newsletter {

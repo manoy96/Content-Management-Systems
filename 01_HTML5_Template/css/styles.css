@@ -384,6 +384,9 @@ h2#blog {
         padding: .5rem 0; }
       .footer footer .info .contact {
         grid-area: contact; }
+        .footer footer .info .contact a {
+          text-decoration: none;
+          color: #FCFFF5; }
       .footer footer .info .newsletter {
         grid-area: newsletter; }
         .footer footer .info .newsletter .subscribe {

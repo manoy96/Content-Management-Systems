@@ -25,7 +25,7 @@
    <div class="headwrap">
 
       <header>
-         <img src="img/dgm3740_logo-01.png" alt="logo">
+         <img src="img/logo.png" srcset="img/logo1x.png 1x, img/logo2x.png 2x, img/logo3x.png 3x" alt="logo">
          <div class="phone">
             <a href="tel:8017241381">801-724-1381</a>
          </div>
@@ -40,19 +40,19 @@
          <a href="#">CRUISES</a>
          <a href="#">BOOK</a>
          <div class="dropdown">
-               <button class="dropbtn">AGENTS
-                  <i class="fas fa-caret-down"></i>
-               </button>
-               <div class="dropdown-content">
-                  <a href="#">Tom</a>
-                  <a href="#">Leslie</a>
-                  <a href="#">Andy</a>
-               </div>
+            <button class="dropbtn">AGENTS
+               <i class="fas fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+               <a href="#">Tom</a>
+               <a href="#">Leslie</a>
+               <a href="#">Andy</a>
             </div>
+         </div>
          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
          </a>
-         
+
          <div class="search">
             <input type="search" name="search" id="search" placeholder="Search...">
             <button><i class="fas fa-search fa-2x"></i></button>
@@ -150,9 +150,11 @@
          <div class="info">
             <div class="contact">
                <h2>Contact Us</h2>
+               <a href="https://goo.gl/maps/mk7e7VAjnpw">
                <p>CABOT CRUIZES</p>
-               <p>23 South Main St. Suite 16</p>
-               <p>Lexington, VA 24450</p>
+               <p>2907 Santa Monica Blvd,</p>
+               <p>Santa Monica, CA 90404</p>
+               </a>
 
                <br>
                <h2>Phone:</h2>
@@ -169,7 +171,7 @@
                <p>Subscribe to our email list and stay up-to-date with our hottest offers and latest specials.</p>
 
                <div class="subscribe">
-                  <input type="email" name="" id="subscribeEmail">
+                  <input type="email" name="" id="subscribeEmail" required>
                   <button type="submit">Subscribe</button>
                </div>
             </div>
@@ -224,21 +226,7 @@
          });
       });
    </script>
-   <script type="application/ld+json">
-      {
-         "@context": "http://schema.org",
-         "@type": "TravelAgency",
-         "name": "Cabot Cruises",
-         "description": "Cabot Cruises strives to deliver the best travel experience to its users",
-         "hours": "Mon-Fri 08:00-18:00",
-         "phone number": "+18017241381",
-         "address": {
-            "@type": "PostalAdress",
-            "streetAdress": "23 South Main St. Suite 16",
-            "addressLocality": "Lexington",
-            "addressRegion": "VA"
-         },
-      }
+   <script src="js/company.js" type="application/ld+json">
    </script>
    <script src="js/menuToggle.js"></script>
 </body>
