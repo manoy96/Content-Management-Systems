@@ -1,14 +1,14 @@
 <?php
-$title="Leslie Knope - Agent";
+$title="Tom Haverford - Agent";
 include '_top.php';
 ?>
 
 <!-- ----------------CONTENT--------------------- -->
+<h2>Agent - Tom Haverford</h2>
 <section class="agent">
 
-    <img src="../img/tom.jpg" alt="Tom Haverford">
+    <img class="image" src="img/tom.jpg" alt="Tom Haverford">
 
-    <h2>Agent - Tom Haverford</h2>
     <div class="phone">
         <b><p>Phone:</p></b>
         <p>1-800-555-1234</p>
@@ -16,7 +16,7 @@ include '_top.php';
     
     <div class="working">
         <b><p>Working:</p></b>
-        <p>Monday - Thurdsy</p>
+        <p>Monday - Thurday</p>
     </div>
     
     <div class="special">
