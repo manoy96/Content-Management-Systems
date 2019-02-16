@@ -261,7 +261,8 @@ header {
 }
 
 .dropdown-content a:hover {
-   background-color: #ddd;
+   background-color: $secondaryColor;
+   color: $thirdColor;
 }
 
 .dropdown:hover .dropdown-content {
@@ -270,6 +271,10 @@ header {
 
    a {
       background-color: $thirdColor;
+   }
+   a:hover {
+      background-color: $secondaryColor;
+      color: $thirdColor;
    }
 }
 
@@ -290,7 +295,7 @@ header {
 
 
 
-//-----------SLIDER
+
 .mySlider {
    z-index: -1;
 
@@ -315,7 +320,7 @@ header {
    height: 300px;
    background-color: rgb(255, 131, 131);
 }
-//---------BLOG ARTICLES
+
 h2#blog {
    margin: 2rem 0 .25rem $gutter;
 }
@@ -328,6 +333,7 @@ h2#blog {
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-column-gap: $gutter;
+
 
 
    .art1,
@@ -424,51 +430,6 @@ h2#blog {
    }
 
 }
-
-
-//--------------AGENTS
-.agent {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: auto;
-   grid-template-areas: 
-      "phone image"
-      "working image"
-      "hours image"
-      "bio image"
-      "comment comment";
-
-   .image {
-      grid-area: image;
-   }
-   .phone {
-      grid-area: phone;
-   }
-   
-   .working {
-      grid-area: working;
-   }
-
-   .special {
-      grid-area: special;
-   }
-
-   .hours {
-      grid-area: hours;
-   }
-   
-   .bio {
-      grid-area: bio;
-   }
-
-   .comment {
-      grid-area: comment;
-   }
-
-
-}
-
-
 
 .footer {
    background-color: $accent;
