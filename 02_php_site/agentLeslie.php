@@ -6,7 +6,7 @@ include '_top.php';
 <!-- ----------------CONTENT--------------------- -->
 <section class="agent">
 
-    <img src="img/tom.jpg" alt="Tom Haverford">
+    <img src="img/leslie.jpg" alt="Tom Haverford">
 
     <h2>Agent - Tom Haverford</h2>
     <div class="phone">
