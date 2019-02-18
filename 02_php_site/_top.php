@@ -36,7 +36,7 @@
    <div class="navwrap">
       <div class="topnav" id="myTopnav">
          <a href="#" class="active">HOME</a>
-         <a href="#">CRUISES</a>
+         <a href="cruises.php">CRUISES</a>
          <a href="#">BOOK</a>
          <div class="dropdown">
             <button class="dropbtn">AGENTS
