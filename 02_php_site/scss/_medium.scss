@@ -66,9 +66,58 @@
     // flex-direction: row;
     // justify-content: space-around;
     // margin: .5rem 0;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 50px;
+    grid-template-areas: 
+      "face insta pin"
+      "twit you .";
   }
 
 
+}
+
+
+
+
+
+
+
+//-----------AGENT
+.agent {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: .75rem;
+  grid-row-gap: .75rem;
+  grid-template-areas: 
+    //  "image image image"
+    //  "phone working hours"
+    //  "special special special"
+    //  "bio bio bio"
+    //  "comment comment comment";
+
+    //  "image phone working"
+    //  "image hours ."
+    //  "image special bio"
+    //  "comment comment comment";
+     
+     "image image phone working"
+     "image image hours ."
+     "special special bio bio"
+     "comment comment . .";
+
+
+
+  .image {}
+     .phone, .working, .hours, .special, .bio, .comment {}
+     .phone{}
+     
+     .working {}
+
+     .hours {}
+
+     .special {}
+
+     .bio {}
+
+     .comment {}
+  
 }

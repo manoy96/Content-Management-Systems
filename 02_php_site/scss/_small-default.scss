@@ -14,12 +14,16 @@ body {
 
    h2 {
       font-size: 24px;
-      padding: 1.5rem 1rem .75rem $gutter;
+      padding: 1.5rem 1rem .75rem 1rem;
       font-family: $titleFont;
    }
 
    p {
       font-family: $defaultFont;
+   }
+
+   main {
+      width:100%;
    }
 }
 
@@ -532,15 +536,28 @@ h2#blog {
    padding: 1rem 0;
 
    .social {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+      // display: flex;
+      // flex-direction: row;
+      // justify-content: space-around;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
       margin: .5rem 0;
+      grid-template-areas: 
+         "face insta"
+         "pin twit"
+         "you .";
 
       i {
          color: #ffffff;
-         margin: 0 1rem;
+         margin: 1rem;
       }
+
+      .face {grid-area: face;}
+      .insta {grid-area: insta}
+      .pin {grid-area: pin;}
+      .twit {grid-area: twit;}
+      .you {grid-area: you;}
    }
 
    p {
@@ -562,11 +579,18 @@ h2#blog {
 
 // -------------AGENT TOM
 .agent {
-   width: 100;
+   width: 100%;
    padding: 1rem $gutter;
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: auto;
+   grid-template-areas: 
+      "image image"
+      "phone working"
+      "hours ."
+      "special special"
+      "bio bio"
+      "comment comment";
 
 
 
@@ -574,8 +598,24 @@ h2#blog {
 
    .image {
       grid-area: image;
+      width: 100%;
+      // margin: 1rem .5rem;
    }
-   .phone{}
+      .phone, .working, .hours, .special, .bio, .comment {
+         margin: .25rem $gutter 1.5rem $gutter;
+      }
+      .phone{grid-area: phone;}
+      
+      .working {grid-area: working;}
+
+      .hours {grid-area: hours;}
+
+      .special {grid-area: special;}
+
+      .bio {grid-area: bio;}
+
+      .comment {grid-area: comment;}
+   
 }
 
 

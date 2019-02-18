@@ -1,43 +1,43 @@
 <?php
-$title="Leslie Knope - Agent";
+$title="Tom Haverford - Agent";
 include '_top.php';
 ?>
 
 <!-- ----------------CONTENT--------------------- -->
+<h2>Agent - Leslie Knope</h2>
 <section class="agent">
 
-    <img src="img/leslie.jpg" alt="Tom Haverford">
+    <img class="image" src="img/leslie.jpg" alt="Leslie Knope">
+        <div class="phone">
+            <h2>Phone:</h2>
+            <p>1-800-555-1234</p>
+        </div>
+        
+        <div class="working">
+            <h2>Working:</h2>
+            <p>Monday - Thurday</p>
+        </div>
 
-    <h2>Agent - Tom Haverford</h2>
-    <div class="phone">
-        <b><p>Phone:</p></b>
-        <p>1-800-555-1234</p>
-    </div>
+        <div class="hours">
+            <h2>Office Hours:</h2>
+            <p>12:00pm - 7:00pm</p>  
+        </div>
     
-    <div class="working">
-        <b><p>Working:</p></b>
-        <p>Monday - Thurday</p>
-    </div>
+        <div class="special">
+            <h2>Destination Specialization:</h2>
+            <p>Mexico, Thailand, Sweden, China, Venesuela, Germany, Italy, England, Scotland, Canada, France. </p>
+        </div>
+        
+        <div class="bio">
+            <h2>Biography:</h2>
+            <p>1-800-555-1234</p>
+        </div>
+        
+        <div class="comment">
+            <h2>Customer Comment:</h2>
+            <p>1-800-555-1234</p>
+        </div>
     
-    <div class="special">
-        <b><p>Destination Specialization:</p></b>
-        <p>Dubai, Mexico, Hawaii, New York, Indiana, Las Vegas, Europe</p>
-    </div>
-    
-    <div class="hours">
-        <b><p>Office Hours:</p></b>
-        <p>9:00am - 5:00pm</p>  
-    </div>
-    
-    <div class="bio">
-        <b><p>Biography:</p></b>
-        <p>1-800-555-1234</p>
-    </div>
-    
-    <div class="comment">
-        <b><p>Customer Comment:</p></b>
-        <p>1-800-555-1234</p>
-    </div>
     
 
 </section>

@@ -26,7 +26,7 @@
                <p>Subscribe to our email list and stay up-to-date with our hottest offers and latest specials.</p>
 
                <div class="subscribe">
-                  <input type="email" name="" id="subscribeEmail" required>
+                  <input type="email" name="" id="subscribeEmail" placeholder="email" required>
                   <button type="submit">Subscribe</button>
                </div>
             </div>
@@ -50,11 +50,11 @@
    </div>
    <div class="copyright">
       <div class="social">
-         <i class="fab fa-facebook-square fa-3x"></i>
-         <i class="fab fa-instagram fa-3x"></i>
-         <i class="fab fa-pinterest fa-3x"></i>
-         <i class="fab fa-twitter-square fa-3x"></i>
-         <i class="fab fa-youtube-square fa-3x"></i>
+         <i class="fab fa-facebook-square fa-3x face"></i>
+         <i class="fab fa-instagram fa-3x insta"></i>
+         <i class="fab fa-pinterest fa-3x pin"></i>
+         <i class="fab fa-twitter-square fa-3x twit"></i>
+         <i class="fab fa-youtube-square fa-3x you"></i>
       </div>
       <p>&copy; 2019 Manuel Espinoza</p>
    </div>
