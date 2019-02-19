@@ -35,7 +35,7 @@
 
    <div class="navwrap">
       <div class="topnav" id="myTopnav">
-         <a href="index.php?page=home"<?=($page=='home'?' class="active"':'');?>" class="active">HOME</a>
+         <a href="index.php?page=home"<?=($page=='home'?' class="active"':'');?>">HOME</a>
          <a href="cruises.php?page=cruises"<?=($page=='cruises'?' class="active"':'');?>">CRUISES</a>
          <a href="book.php?page=book"<?=($page=='book'?' class="active"':'');?>">BOOK</a>
          <div class="dropdown">
