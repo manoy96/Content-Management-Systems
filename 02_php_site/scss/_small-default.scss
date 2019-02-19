@@ -621,7 +621,7 @@ h2#blog {
 // -------------AGENT TOM
 .agent {
    width: 100%;
-   padding: 1rem $gutter;
+   padding: 1rem;
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: auto;
@@ -633,9 +633,7 @@ h2#blog {
       "bio bio"
       "comment comment";
 
-
-
-
+   h2 {padding: .75rem 0 .75rem 0;}
 
    .image {
       grid-area: image;
@@ -657,6 +655,53 @@ h2#blog {
 
       .comment {grid-area: comment;}
    
+}
+
+
+
+
+
+// -----------------BOOK
+.bookForm {
+   padding: 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   .book, .fullName, .stateZip {
+      width: 100%;
+      margin: .5rem auto;
+      label {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+
+         span {
+            font-size: 24px;
+            padding-left: .5rem;
+         }
+
+         input[type=text], input[type=number], input[type=tel], input[type=email], select {
+            border: solid 1px $secondaryColor;
+            padding-left: 1rem;
+            width: 100%;
+            height: 45px;
+         }
+
+         input[type=text] {}
+         input[type=number] {}
+         input[type=tel] {}
+         
+      }
+   }
+   input[type=submit] {
+      width: 100%;
+      height: 45px;
+      background-color: $secondaryColor;
+      color: $thirdColor;
+      align-self: center;
+      border-radius: 15px;
+      border: none;
+   }
 }
 
 

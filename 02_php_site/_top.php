@@ -35,9 +35,9 @@
 
    <div class="navwrap">
       <div class="topnav" id="myTopnav">
-         <a href="#" class="active">HOME</a>
+         <a href="index.php" class="active">HOME</a>
          <a href="cruises.php">CRUISES</a>
-         <a href="#">BOOK</a>
+         <a href="book.php">BOOK</a>
          <div class="dropdown">
             <button class="dropbtn">AGENTS
                <i class="fas fa-caret-down"></i>

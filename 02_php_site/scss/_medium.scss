@@ -161,3 +161,73 @@
      .comment {}
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// -----------------BOOK
+.bookForm {
+  max-width: 680px;
+  margin: 0 auto;
+
+
+  justify-content: center;
+  align-items: center;
+
+  .fullName, .stateZip, {
+    width: 100%;
+  }
+
+  .fullName {
+    display: flex;
+    justify-content: space-between;
+    .first {
+      width: 47%;
+      // padding: 0 .1rem 0 0;
+    }
+    .last {
+      width: 47%;
+      // padding: 0 0 0 .1rem;
+    }
+
+  }
+  .stateZip {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .state, .zip {
+      width: 47%;
+      // margin-right: .5rem;
+    }
+  }
+  .book {
+     width: 100%;
+     label {
+        // align-items: flex-start;
+
+        span {}
+
+        input[type=text], input[type=number], input[type=tel], input[type=email], select {}
+
+        input[type=text] {}
+        input[type=number] {}
+        input[type=tel] {}
+        
+     }
+  }
+
+  input[type=submit] {
+     width: 50%;
+     align-self: center;
+     margin: .75rem 0;
+  }
+}
