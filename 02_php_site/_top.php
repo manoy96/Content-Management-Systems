@@ -45,7 +45,6 @@
             <div class="dropdown-content">
                <a href="agentTom.php">Tom</a>
                <a href="agentLeslie.php">Leslie</a>
-               <a href="#">Andy</a>
             </div>
          </div>
          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
