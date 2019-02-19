@@ -35,16 +35,16 @@
 
    <div class="navwrap">
       <div class="topnav" id="myTopnav">
-         <a href="index.php" class="active">HOME</a>
-         <a href="cruises.php">CRUISES</a>
-         <a href="book.php">BOOK</a>
+         <a href="index.php?page=home"<?=($page=='home'?' class="active"':'');?>" class="active">HOME</a>
+         <a href="cruises.php?page=cruises"<?=($page=='cruises'?' class="active"':'');?>">CRUISES</a>
+         <a href="book.php?page=book"<?=($page=='book'?' class="active"':'');?>">BOOK</a>
          <div class="dropdown">
             <button class="dropbtn">AGENTS
                <i class="fas fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-               <a href="agentTom.php">Tom</a>
-               <a href="agentLeslie.php">Leslie</a>
+               <a href="agentTom.php?page=agentTom"<?=($page=='agentTom'?' class="active"':'');?>">Tom</a>
+               <a href="agentLeslie.php?page=agentLeslie"<?=($page=='agentLeslie'?' class="active"':'');?>">Leslie</a>
             </div>
          </div>
          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
