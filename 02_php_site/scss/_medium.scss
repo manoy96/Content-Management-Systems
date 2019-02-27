@@ -83,13 +83,15 @@
 // -------------CRUISES
 .cruises {
   .cruiseItem {
-     flex-direction: row;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
 
      padding: 1rem;
 
      img {
-        width: 100%;
-        height: auto;
+        // width: 100%;
+        // height: auto;
      }
 
      .cruiseInfo {
@@ -100,7 +102,7 @@
 
 
         h2 {
-           padding: 0 0 .75rem 0;
+          //  padding: 0 0 .75rem 0;
         }
         p {}
         button {

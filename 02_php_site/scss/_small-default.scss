@@ -11,6 +11,7 @@ body {
    // padding-top: 47px;
 
    font-family: $defaultFont;
+
    h1 {
       font-size: 36px;
       font-family: $defaultFont;
@@ -29,7 +30,7 @@ body {
    }
 
    main {
-      width:100%;
+      width: 100%;
    }
 }
 
@@ -284,6 +285,7 @@ header {
    a {
       background-color: $thirdColor;
    }
+
    a:hover {
       background-color: $secondaryColor;
       color: $thirdColor;
@@ -420,7 +422,10 @@ h2#blog {
 
    }
 
-   .art1:hover, .art2:hover, .art3:hover, .art4:hover {
+   .art1:hover,
+   .art2:hover,
+   .art3:hover,
+   .art4:hover {
       transition: .5s ease opacity;
       opacity: 1;
    }
@@ -445,7 +450,10 @@ h2#blog {
 
 .footer {
    background-color: $accent;
-   h2 {padding: .75rem 0 0 0;}
+
+   h2 {
+      padding: .75rem 0 0 0;
+   }
 
    footer {
       max-width: $maxW;
@@ -481,6 +489,7 @@ h2#blog {
 
          .contact {
             grid-area: contact;
+
             a {
                text-decoration: none;
                color: $thirdColor;
@@ -551,7 +560,7 @@ h2#blog {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
       margin: .5rem 0;
-      grid-template-areas: 
+      grid-template-areas:
          "face insta"
          "pin twit"
          "you .";
@@ -561,11 +570,25 @@ h2#blog {
          margin: 1rem;
       }
 
-      .face {grid-area: face;}
-      .insta {grid-area: insta}
-      .pin {grid-area: pin;}
-      .twit {grid-area: twit;}
-      .you {grid-area: you;}
+      .face {
+         grid-area: face;
+      }
+
+      .insta {
+         grid-area: insta
+      }
+
+      .pin {
+         grid-area: pin;
+      }
+
+      .twit {
+         grid-area: twit;
+      }
+
+      .you {
+         grid-area: you;
+      }
    }
 
    p {
@@ -586,8 +609,9 @@ h2#blog {
       padding: 1rem;
 
       img {
-         width: 100%;
-         height: auto;
+         // width: 100%;
+         // height: auto;
+         border-radius: 10px;
       }
 
       .cruiseInfo {
@@ -599,7 +623,9 @@ h2#blog {
          h2 {
             padding: 1.5rem 0 .75rem 0;
          }
+
          p {}
+
          button {
             width: 100%;
             height: 45px;
@@ -625,7 +651,7 @@ h2#blog {
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: auto;
-   grid-template-areas: 
+   grid-template-areas:
       "image image"
       "phone working"
       "hours ."
@@ -633,28 +659,49 @@ h2#blog {
       "bio bio"
       "comment comment";
 
-   h2 {padding: .75rem 0 .75rem 0;}
+   h2 {
+      padding: .75rem 0 .75rem 0;
+   }
 
    .image {
       grid-area: image;
       width: 100%;
       // margin: 1rem .5rem;
    }
-      .phone, .working, .hours, .special, .bio, .comment {
-         margin: .25rem $gutter 1.5rem $gutter;
-      }
-      .phone{grid-area: phone;}
-      
-      .working {grid-area: working;}
 
-      .hours {grid-area: hours;}
+   .phone,
+   .working,
+   .hours,
+   .special,
+   .bio,
+   .comment {
+      margin: .25rem $gutter 1.5rem $gutter;
+   }
 
-      .special {grid-area: special;}
+   .phone {
+      grid-area: phone;
+   }
 
-      .bio {grid-area: bio;}
+   .working {
+      grid-area: working;
+   }
 
-      .comment {grid-area: comment;}
-   
+   .hours {
+      grid-area: hours;
+   }
+
+   .special {
+      grid-area: special;
+   }
+
+   .bio {
+      grid-area: bio;
+   }
+
+   .comment {
+      grid-area: comment;
+   }
+
 }
 
 
@@ -667,9 +714,13 @@ h2#blog {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
-   .book, .fullName, .stateZip {
+
+   .book,
+   .fullName,
+   .stateZip {
       width: 100%;
       margin: .5rem auto;
+
       label {
          display: flex;
          flex-direction: column;
@@ -680,7 +731,11 @@ h2#blog {
             padding-left: .5rem;
          }
 
-         input[type=text], input[type=number], input[type=tel], input[type=email], select {
+         input[type=text],
+         input[type=number],
+         input[type=tel],
+         input[type=email],
+         select {
             border: solid 1px $secondaryColor;
             padding-left: 1rem;
             width: 100%;
@@ -688,11 +743,14 @@ h2#blog {
          }
 
          input[type=text] {}
+
          input[type=number] {}
+
          input[type=tel] {}
-         
+
       }
    }
+
    input[type=submit] {
       width: 100%;
       height: 45px;

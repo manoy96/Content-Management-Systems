@@ -35,6 +35,7 @@
 
    <div class="navwrap">
       <div class="topnav" id="myTopnav">
+      <?php $page=$_REQUEST['page']; ?>
          <a href="index.php?page=home"<?=($page=='home'?' class="active"':'');?>">HOME</a>
          <a href="cruises.php?page=cruises"<?=($page=='cruises'?' class="active"':'');?>">CRUISES</a>
          <a href="book.php?page=book"<?=($page=='book'?' class="active"':'');?>">BOOK</a>
