@@ -30,12 +30,12 @@ include '_top.php';
         
         <div class="bio">
             <h2>Biography:</h2>
-            <p>1-800-555-1234</p>
+            <p>From a young age I knew my goal was to make people happy, and I remember travelling as a young girl to that Bahamas. I knew that if I could make others as happy as I was when I went it would be beneficial to everyone. </p>
         </div>
         
         <div class="comment">
             <h2>Customer Comment:</h2>
-            <p>1-800-555-1234</p>
+            <p>"Thanks Leslie, I can't thank you enough for booking my trip to Mexico. I had the time of my life!"</p>
         </div>
     
     
