@@ -1,0 +1,176 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY  */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+	font-weight: $lightWeight;
+    min-width: 320px;
+}
+
+
+
+/* HEADER  */
+div#headerWrapper {background-color: lighten($footerColor, 5%);}
+header {
+    border-bottom:solid 1px $primaryColor;
+    position: relative;
+    
+	figure.logo {margin: 1rem 0 .5rem 2%; float: left; width: 50%; max-width: 212px;}
+	figure.logo img{width: 100%;}
+	
+    div.telephone {
+        position: absolute;
+        right: $gutter;
+        bottom: .5rem;
+        i{color: $secondaryColor; font-size: 4rem;}
+        span{display: none;}
+    } //end telephone
+} // end header
+
+
+
+/* SEARCH  */
+div#navWrapper {background-color: $menuColor;}
+nav {position: relative;}
+div#search {
+	position: absolute;
+	top:8px;
+	right: $gutter;
+	form input.sfield {
+		-webkit-appearance: none;
+		position: absolute;
+		right: 28px;
+		font-size: 1rem;
+		color: $primaryColor;
+		width: 185px;
+		height: 28px;
+		padding: .25rem .5rem;
+		border:none;
+		border-radius: 6px 0 0 6px;
+		background-color: rgba(255,255,255,0.7);
+		transition: width .5s;
+	} // end input
+	form input:focus {width: 190px;}
+	form input.sbtn {
+		background-image: url(../images/searchIcon.png);
+		background-size:50%;
+		position: absolute;
+		background-repeat: no-repeat;
+		background-position: center center;
+		right: 0;
+		background-color: lighten($menuColor,20%);
+		height: 28px;
+		width: 28px;
+		border: none;
+		border-radius: 0 6px 6px 0;
+	}
+} // end search
+
+
+
+
+
+/* MAIN  */
+main {
+	padding-bottom: 1em;
+	min-height: 10rem;
+	h1 {font-size: 2rem; color: $textColor; margin: 2rem 0 .3rem 0; font-weight: $normalWeight;}
+	>h1, >p, >ol, >ul { margin-left: $gutter;} /*in case there is not a row/column layout*/
+
+	h2 {font-size: 1.65rem; color: $primaryColor; margin-top: 1rem; font-weight: $heavyWeight;}
+	
+	p {font-size: 1rem; line-height: 125%; color: $textColor; margin-bottom: .5rem;}
+	
+	a { color: $primaryColor;}
+	a.read-more {
+		display: block;
+		background-color: lighten($primaryColor,20%);
+		color: white;
+		padding: .3rem 0;
+		text-align: center;
+		font-size: .75rem;
+		width: 8rem;
+		border-radius: 20px;
+		float:right;
+	}
+	
+	/* SLIDER CSS*/
+	div.my_slider img {
+		width: 100%;
+	}
+} // end main
+	
+
+
+/*----- COLUMN LAYOUT -----*/
+.row {clear: both;}
+.column {padding: 0 $gutter;}
+
+/* create a loop for all 12 columns */
+@for $i from 1 through 12 {
+	$w:($i/12)*100%;
+	.small-#{$i} {width: $w; float:left;}
+} // end loop
+	
+	
+	
+
+
+
+
+
+
+
+
+/* FOOTER  */
+div#footerWrapper{
+	clear: both;
+	background-color: $footerColor;
+}
+footer {
+	color: $primaryColor;
+	padding: 2rem 0;
+	line-height: 125%;
+	h2 {font-size: 1.3rem; margin-top: 1rem;}
+	address{font-style: normal;}
+	p{}
+	a {color: $primaryColor; text-decoration: none;}
+	a:hover {text-decoration: underline; color: lighten($primaryColor,10%);}
+	.legal {text-align: center; font-size: .75rem;}
+} // end footer
+
+div.socialIcons {
+		clear:both;
+		background-color: #333;
+		text-align: center;
+		a {
+			display: inline-block;
+			font-size: 2rem;
+			padding-top: 1rem;
+			height: 4rem;
+			width: 4rem;
+			background-color: #333;
+			color: white;
+			text-align: center;
+		} // end a
+		a:hover {background-color: $secondaryColor;}
+	} // end social
+
+div.associations {
+    display: flex;
+    flex-wrap: wrap;
+    div {flex-basis:50%; padding: 1rem 8%;}
+    div img {width: 100%;}
+} // end associations
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

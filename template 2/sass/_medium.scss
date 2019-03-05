@@ -1,0 +1,30 @@
+/**/
+header {
+    div.telephone {
+		i{font-size: 1.75rem;}
+        a{color: $secondaryColor; text-decoration: none; font-size: 1.78rem; font-weight: $normalWeight;}
+        span{display: inline;}
+    } //end telephone
+}
+
+
+/* MAIN  */
+
+h1 {font-size: 2.5em;}
+
+@for $i from 1 through 12 {
+	$w:($i/12)*100%;
+	.medium-#{$i} {width: $w; float:left;}
+}
+	
+	
+div.socialIcons a {
+	font-size: 3rem;
+	padding-top: 1.5rem;
+	height: 6rem;
+	width: 6rem;
+}
+
+div.associations {
+    div {flex-basis:33.333%; padding: 1rem 4%;}
+} // end associations
