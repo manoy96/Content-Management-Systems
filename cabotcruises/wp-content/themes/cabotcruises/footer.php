@@ -66,8 +66,8 @@
 
 
 
-   <script src="slick/jquery-3.3.1.js"></script>
-   <script src="slick/slick.min.js"></script>
+   <script src="<?php echo get_template_directory_uri(); ?>/slick/jquery-3.3.1.js"></script>
+   <script src="<?php echo get_template_directory_uri(); ?>/slick/slick.min.js"></script>
    <script>
       $(document).ready(function () {
          $('.mySlider').slick({
@@ -80,9 +80,9 @@
          });
       });
    </script>
-   <script src="js/company.js" type="application/ld+json">
+   <script src="<?php echo get_template_directory_uri(); ?>/js/company.js" type="application/ld+json">
    </script>
-   <script src="js/menuToggle.js"></script>
+   <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
 </body>
 
 </html>
