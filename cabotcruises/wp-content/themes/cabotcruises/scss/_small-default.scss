@@ -91,7 +91,7 @@ div#search {
 		transition: width .5s;
 	} // end input
 	form input:focus {width: 190px;}
-	form input.sbtn {
+	form .sbtn {
 		// background-image: url(../images/searchIcon.png);
 		background-size:50%;
 		position: absolute;
@@ -102,7 +102,10 @@ div#search {
 		height: 28px;
 		width: 28px;
 		border: none;
-		border-radius: 0 6px 6px 0;
+      border-radius: 0 6px 6px 0;
+      i {
+         color: #fff;
+      }
 	}
 } // end search
 

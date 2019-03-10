@@ -58,8 +58,8 @@ div#search {
 		font-size: .8rem;
 	} // end input
 	form input:focus {width: 160px;}
-	form input.sbtn {
-		height: 23px;
+	form .sbtn {
+		height: 100%;
 		width: 23px;
 	}
 } // end search
