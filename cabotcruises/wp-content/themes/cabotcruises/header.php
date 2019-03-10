@@ -55,7 +55,8 @@
 		<div id="search">
 		<form method="get" action="/">
 			<input class="sfield" type="search" name="s" placeholder="search...">
-			<input class="sbtn" type="submit" value="">
+			<!-- <input class="sbtn" type="submit" value=""> -->
+         <button class="sbtn" type="submit" value=""><i class="fas fa-search"></i></button>
 		</form>
 	</div>
 	</nav>
