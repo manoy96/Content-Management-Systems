@@ -82,7 +82,8 @@
    </script>
    <script src="<?php echo get_template_directory_uri(); ?>/js/company.js" type="application/ld+json">
    </script>
-   <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
+   <script async src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
+   <script async src="<?php echo get_template_directory_uri(); ?>/js/lazyload.min.js"></script>
 </body>
 
 </html>

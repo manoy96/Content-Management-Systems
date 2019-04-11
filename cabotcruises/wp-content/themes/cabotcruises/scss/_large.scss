@@ -279,3 +279,13 @@ main {
       .comment {}
    
  }
+ .dest {
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+
+   figure{
+      img{
+
+      }
+      figcaption{}
+   }
+}

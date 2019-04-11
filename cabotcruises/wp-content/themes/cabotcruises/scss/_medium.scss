@@ -264,3 +264,14 @@
      margin: .75rem 0;
   }
 }
+
+.dest {
+  grid-template-columns: 1fr 1fr 1fr;
+
+  figure{
+     img{
+
+     }
+     figcaption{}
+  }
+}

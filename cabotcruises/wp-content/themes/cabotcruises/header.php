@@ -16,6 +16,8 @@
       crossorigin="anonymous">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0"
       crossorigin="anonymous">
+      <link href="<?php echo get_template_directory_uri(); ?>/slick/jquery-3.3.1.js" rel="stylesheet">
+      <link href="<?php echo get_template_directory_uri(); ?>/slick/slick.min.js" rel="stylesheet">
    <link href="<?php echo get_template_directory_uri(); ?>/slick/slick.css" rel="stylesheet">
    <link href="<?php echo get_template_directory_uri(); ?>/slick/slick-theme.css" rel="stylesheet">
    <link rel="stylesheet" type="text/css" media="screen" href="<?php echo get_template_directory_uri(); ?>/css/styles.css" />
