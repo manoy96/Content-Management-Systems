@@ -35,10 +35,18 @@
          <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" srcset="<?php echo get_template_directory_uri(); ?>/img/logo1x.png 1x, <?php echo get_template_directory_uri(); ?>/img/logo2x.png 2x, <?php echo get_template_directory_uri(); ?>/img/logo3x.png 3x" alt="logo">
          <h1>Cabot Cruises</h1>
          </div>
-         
-         <div class="phone">
-            <a href="tel:8017241381">801-724-1381</a>
+         <div class="myLinks">
+            <div class="phone">
+               <a href="tel:8017241381">801-724-1381</a>
+            </div>
+            <div class="social">
+               <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+               <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+               <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
+            </div>
          </div>
+
+
       </header>
    </div>
 
@@ -47,7 +55,7 @@
 	<nav class="clearfix">
   		<button id="hamburgerBtn"></button>
         <?php wp_nav_menu(array('menu_id' => 'primaryNav'));?>
-            <ul id="primaryNav">
+            <!-- <ul id="primaryNav">
                 <li><a href="#">Home</a></li>
                 <li class="current-menu-item"><a href="#">Plans</a></li>
                 <li class="menu-item-has-children"><a href="#">Models</a>
@@ -57,7 +65,7 @@
                     <li><a href="#">Model 3</a></li>
                     </ul>
                 </li>
-            </ul>
+            </ul> -->
 
 		<div id="search">
 		<form method="get" action="/">
