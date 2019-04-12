@@ -27,6 +27,8 @@ body {
 
    p {
       font-family: $defaultFont;
+      padding: .75rem 1rem .5rem 1rem;
+      font-family: $titleFont;
    }
 
    main {
