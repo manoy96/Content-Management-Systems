@@ -10,6 +10,7 @@
 
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/solid.css" integrity="sha384-+0VIRx+yz1WBcCTXBkVQYIBVNEFH1eP6Zknm16roZCyeNg2maWEpk/l/KsyFKs7G"
       crossorigin="anonymous">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/brands.css" integrity="sha384-1KLgFVb/gHrlDGLFPgMbeedi6tQBLcWvyNUN+YKXbD7ZFbjX6BLpMDf0PJ32XJfX"
@@ -30,7 +31,11 @@
    <div class="headwrap">
 
       <header>
+         <div class="brand">
          <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" srcset="<?php echo get_template_directory_uri(); ?>/img/logo1x.png 1x, <?php echo get_template_directory_uri(); ?>/img/logo2x.png 2x, <?php echo get_template_directory_uri(); ?>/img/logo3x.png 3x" alt="logo">
+         <h1>Cabot Cruises</h1>
+         </div>
+         
          <div class="phone">
             <a href="tel:8017241381">801-724-1381</a>
          </div>
