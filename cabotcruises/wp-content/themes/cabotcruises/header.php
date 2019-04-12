@@ -17,8 +17,6 @@
       crossorigin="anonymous">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0"
       crossorigin="anonymous">
-      <link href="<?php echo get_template_directory_uri(); ?>/slick/jquery-3.3.1.js" rel="stylesheet">
-      <link href="<?php echo get_template_directory_uri(); ?>/slick/slick.min.js" rel="stylesheet">
    <link href="<?php echo get_template_directory_uri(); ?>/slick/slick.css" rel="stylesheet">
    <link href="<?php echo get_template_directory_uri(); ?>/slick/slick-theme.css" rel="stylesheet">
    <link rel="stylesheet" type="text/css" media="screen" href="<?php echo get_template_directory_uri(); ?>/css/styles.css" />
@@ -55,17 +53,7 @@
 	<nav class="clearfix">
   		<button id="hamburgerBtn"></button>
         <?php wp_nav_menu(array('menu_id' => 'primaryNav'));?>
-            <!-- <ul id="primaryNav">
-                <li><a href="#">Home</a></li>
-                <li class="current-menu-item"><a href="#">Plans</a></li>
-                <li class="menu-item-has-children"><a href="#">Models</a>
-                    <ul>
-                    <li><a href="#">Model 1</a></li>
-                    <li><a href="#">Model 2</a></li>
-                    <li><a href="#">Model 3</a></li>
-                    </ul>
-                </li>
-            </ul> -->
+           
 
 		<div id="search">
 		<form method="get" action="/">
@@ -76,27 +64,6 @@
 	</div>
 	</nav>
 </div>
-
-   <!-- <div class="navwrap">
-      <div class="topnav" id="myTopnav">
-      <?php //wp_nav_menu(array('menu_id' => 'topnav')); ?>
-       <?php //$page=$_REQUEST['page']; ?>
-         <a href="index.php?page=home"<?//=($page=='home'?' class="active"':'');?>">HOME</a>
-         <a href="cruises.php?page=cruises"<?//=($page=='cruises'?' class="active"':'');?>">CRUISES</a>
-         <a href="book.php?page=book"<?//=($page=='book'?' class="active"':'');?>">BOOK</a>
-         <div class="dropdown">
-            <button class="dropbtn">AGENTS
-               <i class="fas fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-               <a href="agentTom.php?page=agentTom"<?//=($page=='agentTom'?' class="active"':'');?>">Tom</a>
-               <a href="agentLeslie.php?page=agentLeslie"<?//=($page=='agentLeslie'?' class="active"':'');?>">Leslie</a>
-            </div>
-         </div> -->
-         <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-         </a> -->
-
          <div class="search">
             <input type="search" name="search" id="search" placeholder="Search...">
             <button><i class="fas fa-search fa-2x"></i></button>
