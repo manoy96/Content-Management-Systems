@@ -937,8 +937,25 @@ h2#blog {
    }
 }
 
+.gallery {
+   width: 100%;
+   padding: 0 1rem;
 
+   figure {
+      width: 100%;
+      img {width: 100%;}
+   }
+}
 
+.location {
+   h2 {}
+   p {}
+   iframe {
+     width: 100%;
+     height: 100vh;
+     padding: 1rem;
+   }
+ }
 
 
 
