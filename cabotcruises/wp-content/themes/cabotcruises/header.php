@@ -38,9 +38,9 @@
                <a href="tel:8017241381">801-724-1381</a>
             </div>
             <div class="mySocial">
-               <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
-               <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
-               <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
+               <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+               <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+               <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
             </div>
          </div>
 

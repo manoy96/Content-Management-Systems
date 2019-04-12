@@ -90,7 +90,8 @@
    </script>
    
    <!-- <script async src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/lazyload.min.js"></script> -->
-   <script async src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/lazyload2.min.js" ></script>
+   <!-- <script async src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/lazyload2.min.js" ></script> -->
+   <script src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/lazyload.js"></script>
 </body>
 
 </html>
