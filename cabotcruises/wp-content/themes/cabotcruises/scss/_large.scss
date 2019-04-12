@@ -1,3 +1,30 @@
+header {
+
+   div.brand {
+
+      img {}
+
+      h1 {}
+   }
+
+   div.myLinks {
+      .phone {
+
+         a {}
+      }
+      .mySocial {
+         margin: 0 2rem 1rem 0;
+        display: flex;
+        justify-content: space-between;
+         a {
+            i {}
+         }
+      }
+   }
+
+}
+
+
 /* NAVigation  */
 
 nav {
