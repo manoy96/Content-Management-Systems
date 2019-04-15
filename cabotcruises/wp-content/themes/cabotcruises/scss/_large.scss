@@ -31,6 +31,7 @@ header {
 nav {
    background-color:$menuColor;
    max-width: 1200px;
+   margin: 0 auto;
 
 	// new stuff
 	ul {
@@ -82,14 +83,14 @@ nav {
 div#search {
 	form input.sfield {
 		right: 23px;
-		height: 23px;
+		// height: 23px;
 		width: 158px;
 		font-size: .8rem;
 	} // end input
 	form input:focus {width: 160px;}
 	form .sbtn {
-		height: 100%;
-		width: 23px;
+		// height: 100%;
+		// width: 23px;
 	}
 } // end search
 
