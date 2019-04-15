@@ -56,7 +56,8 @@
          <i class="fab fa-twitter-square fa-3x twit"></i>
          <i class="fab fa-youtube-square fa-3x you"></i>
       </div>
-      <p>&copy; 2019 Manuel Espinoza</p>
+      <p>&copy; 2019 Cabot Cruises - Manuel Espinoza</p>
+      <a href="http://cabotcruises.manuelespin.com/wp-admin/index.php">admin</a>
    </div>
 
 
@@ -64,7 +65,8 @@
 
 
 
-
+   <!-- JQUERY -->
+   <script src="<?php echo get_template_directory_uri(); ?>/slick/jquery-3.3.1.js"></script>
 
    <script>
       $(document).ready(function () {
@@ -80,15 +82,13 @@
    </script>
    <!-- my script -->
    <script src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/scripts.js"></script>
-   <!-- JQUERY -->
-   <script src="<?php echo get_template_directory_uri(); ?>/slick/jquery-3.3.1.js"></script>
    <!-- SLICK SLIDER -->
    <script  src="<?php echo get_template_directory_uri(); ?>/slick/slick.min.js"></script>
-   
-   
+
+
    <script src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/company.js" type="application/ld+json">
    </script>
-   
+
    <!-- <script async src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/lazyload.min.js"></script> -->
    <!-- <script async src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/lazyload2.min.js" ></script> -->
    <script src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/lazyload.js"></script>

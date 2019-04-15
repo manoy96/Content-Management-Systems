@@ -31,7 +31,11 @@
       <header>
          <div class="brand">
          <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" srcset="<?php echo get_template_directory_uri(); ?>/img/logo1x.png 1x, <?php echo get_template_directory_uri(); ?>/img/logo2x.png 2x, <?php echo get_template_directory_uri(); ?>/img/logo3x.png 3x" alt="logo">
-         <h1>Cabot Cruises</h1>
+         <div class="bName">
+            <h1>Cabot Cruises</h1>
+            <h2>Plan Your Next Adventure</h2>
+         </div>
+         
          </div>
          <div class="myLinks">
             <div class="phone">
