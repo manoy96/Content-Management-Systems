@@ -29,7 +29,8 @@ header {
 /* NAVigation  */
 
 nav {
-	background-color:$menuColor;
+   background-color:$menuColor;
+   max-width: 1200px;
 
 	// new stuff
 	ul {
