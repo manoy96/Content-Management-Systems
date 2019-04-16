@@ -364,9 +364,9 @@ div#search {
   grid-template-columns: 1fr 1fr;
   margin-bottom: 1rem;
    p {
-    border-right: solid 2px #666;
+    // border-right: solid 2px #666;
    }
    p:nth-child(even) {
-     border-right: none;
+    //  border-right: none;
    }
 }

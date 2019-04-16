@@ -1047,14 +1047,31 @@ h2#blog {
 }
 
 .location {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto;
+   grid-template-areas: 
+   "";
    h2 {}
 
    p {}
 
-   iframe {
-      width: 100%;
-      height: 100vh;
-      padding: 1rem;
+   .address {
+      grid-area: address;
+   }
+   .email {
+      grid-area: email;
+   }
+   .phone {
+      grid-area: phone;
+   }
+   .map {
+      grid-area: map;
+      iframe {
+         width: 100%;
+         height: 100vh;
+         padding: 1rem;
+      }
    }
 }
 
