@@ -66,32 +66,33 @@
 
 
    <!-- JQUERY -->
-   <script src="<?php echo get_template_directory_uri(); ?>/slick/jquery-3.3.1.js"></script>
+   <!-- <script src="<?php echo get_template_directory_uri(); ?>/slick/jquery-3.3.1.js"></script> -->
 
-   <script>
-      $(document).ready(function () {
-         $('.mySlider').slick({
-            autoplay: true,
-            dots: true,
-            arrows: false,
-            cssEase: 'ease-out',
-            speed: 2000,
-            autoplaySpeed: 8000
-         });
-      });
-   </script>
+   
    <!-- my script -->
    <script src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/scripts.js"></script>
    <!-- SLICK SLIDER -->
-   <script  src="<?php echo get_template_directory_uri(); ?>/slick/slick.min.js"></script>
+   <!-- <script  src="<?php echo get_template_directory_uri(); ?>/slick/slick.min.js"></script> -->
 
 
    <script src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/company.js" type="application/ld+json">
    </script>
 
-   <!-- <script async src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/lazyload.min.js"></script> -->
-   <!-- <script async src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/lazyload2.min.js" ></script> -->
-   <script src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/lazyload.js"></script>
+   <!-- <script src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/lazyload.js"></script> -->
+
+
+   <script language="JavaScript" type="text/javascript" src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/jquery.js"></script>
+   <script language="JavaScript" type="text/javascript" src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/jquery-migrate.js"></script>
+   <script language="JavaScript" type="text/javascript" src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/slick/slick.min.js"></script>
+   <script>
+      $('.mySlider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+   </script>
 </body>
 
 </html>

@@ -102,11 +102,12 @@ div#search {
   form input.sfield {
     //  width: 180px;
   }
+
   // end input
   form input:focus {}
 
   form .sbtn {
-     i {}
+    i {}
   }
 }
 
@@ -335,10 +336,11 @@ div#search {
 
 .dest {
   // grid-template-columns: 1fr 1fr 1fr;
-  
+
 
   figure {
     width: 33%;
+
     img {}
 
     figcaption {}
@@ -346,13 +348,27 @@ div#search {
 }
 
 .location {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "address email"
+    "phone ."
+    "map map";
+
   h2 {}
 
   p {}
 
-  iframe {
-    width: 100%;
-    height: 50vh;
+  .address {}
+
+  .email {}
+
+  .phone {}
+
+  .map {
+    iframe {
+      width: 100%;
+      height: 50vh;
+    }
   }
 }
 
@@ -363,10 +379,12 @@ div#search {
 .about {
   grid-template-columns: 1fr 1fr;
   margin-bottom: 1rem;
-   p {
+
+  p {
     // border-right: solid 2px #666;
-   }
-   p:nth-child(even) {
+  }
+
+  p:nth-child(even) {
     //  border-right: none;
-   }
+  }
 }
