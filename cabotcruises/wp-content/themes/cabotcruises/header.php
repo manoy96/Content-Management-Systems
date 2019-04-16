@@ -9,17 +9,30 @@
 
 
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- GOOGLE FONTS -->
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+   <!-- FONTAWESOME -->
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/solid.css" integrity="sha384-+0VIRx+yz1WBcCTXBkVQYIBVNEFH1eP6Zknm16roZCyeNg2maWEpk/l/KsyFKs7G"
       crossorigin="anonymous">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/brands.css" integrity="sha384-1KLgFVb/gHrlDGLFPgMbeedi6tQBLcWvyNUN+YKXbD7ZFbjX6BLpMDf0PJ32XJfX"
       crossorigin="anonymous">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0"
       crossorigin="anonymous">
+<!-- SLICK SLIDER CSS -->
    <link href="<?php echo get_template_directory_uri(); ?>/slick/slick.css" rel="stylesheet">
    <link href="<?php echo get_template_directory_uri(); ?>/slick/slick-theme.css" rel="stylesheet">
+   <!-- MY STYLES -->
    <link rel="stylesheet" type="text/css" media="screen" href="<?php echo get_template_directory_uri(); ?>/css/styles.css" />
+   <!-- reCAPTCHA -->
+   <script src="https://www.google.com/recaptcha/api.js?render=6Ldqnp4UAAAAANApye5FXo-dX3meQGrFeNQFrCDh"></script>
+  <script>
+  grecaptcha.ready(function() {
+      grecaptcha.execute('6Ldqnp4UAAAAALqiDKdFCtEFspJ4g-IaGbYgTleN', {action: 'action_name'}).then(function(token) {
+         ...
+      });
+  });
+  </script>
 </head>
 
 <body>

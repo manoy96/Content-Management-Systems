@@ -63,24 +63,10 @@
 
 
 
-
-
-   <!-- JQUERY -->
-   <!-- <script src="<?php echo get_template_directory_uri(); ?>/slick/jquery-3.3.1.js"></script> -->
-
    
-   <!-- my script -->
-   <script src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/scripts.js"></script>
-   <!-- SLICK SLIDER -->
-   <!-- <script  src="<?php echo get_template_directory_uri(); ?>/slick/slick.min.js"></script> -->
-
-
+   <!-- SCRIPTS -->
    <script src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/company.js" type="application/ld+json">
    </script>
-
-   <!-- <script src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/lazyload.js"></script> -->
-
-
    <script language="JavaScript" type="text/javascript" src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/jquery.js"></script>
    <script language="JavaScript" type="text/javascript" src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/jquery-migrate.js"></script>
    <script language="JavaScript" type="text/javascript" src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/slick/slick.min.js"></script>
@@ -93,6 +79,9 @@
         slidesToScroll: 1
     });
    </script>
+   <script src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/scripts.js"></script>
+   <script src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/lazyload2.min.js"></script>
+
 </body>
 
 </html>
