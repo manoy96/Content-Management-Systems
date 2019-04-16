@@ -57,7 +57,7 @@
          <i class="fab fa-youtube-square fa-3x you"></i>
       </div>
       <p>&copy; 2019 Cabot Cruises - Manuel Espinoza</p>
-      <a href="http://cabotcruises.manuelespin.com/wp-admin/index.php">admin</a>
+      <a id="admin" href="http://cabotcruises.manuelespin.com/wp-admin/index.php">admin</a>
    </div>
 
 

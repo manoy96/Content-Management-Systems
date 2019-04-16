@@ -123,7 +123,7 @@ div#search {
       right: 28px;
       font-size: 1rem;
       color: $primaryColor;
-      width: 185px;
+      width: 120px;
       height: 28px;
       padding: .25rem .5rem;
       border: none;
@@ -811,6 +811,13 @@ h2#blog {
          grid-area: you;
       }
    }
+   #admin {
+      padding: .4rem;
+      text-decoration: none;
+      color: #fff;
+      background-color: #666;
+      border-radius: 3px;
+   }
 
    p {
       color: #ffffff;
@@ -1001,13 +1008,17 @@ h2#blog {
 
 .dest {
    width: 100%;
-   padding: 0 1rem;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: auto;
-   grid-gap: 1rem 1rem;
+   // padding: 0 1rem;
+   // display: grid;
+   // grid-template-columns: 1fr 1fr;
+   // grid-template-rows: auto;
+   // grid-gap: 1rem 1rem;
+   display: flex;
+   flex-wrap: wrap;
 
    figure {
+      padding: .75rem;
+      width: 50%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1045,6 +1056,17 @@ h2#blog {
       height: 100vh;
       padding: 1rem;
    }
+}
+
+
+
+.about {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto;
+   grid-gap: 1rem 1rem;
+
+   p{}
 }
 
 

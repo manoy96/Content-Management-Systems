@@ -98,6 +98,18 @@
 
 }
 
+div#search {
+  form input.sfield {
+    //  width: 180px;
+  }
+  // end input
+  form input:focus {}
+
+  form .sbtn {
+     i {}
+  }
+}
+
 
 
 
@@ -259,8 +271,7 @@
   align-items: center;
 
   .fullName,
-  .stateZip,
-    {
+  .stateZip {
     width: 100%;
   }
 
@@ -323,9 +334,11 @@
 }
 
 .dest {
-  grid-template-columns: 1fr 1fr 1fr;
+  // grid-template-columns: 1fr 1fr 1fr;
+  
 
   figure {
+    width: 33%;
     img {}
 
     figcaption {}
@@ -345,4 +358,15 @@
 
 #primaryNav {
   li {}
+}
+
+.about {
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 1rem;
+   p {
+    border-right: solid 2px #666;
+   }
+   p:nth-child(even) {
+     border-right: none;
+   }
 }

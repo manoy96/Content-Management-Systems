@@ -313,9 +313,16 @@ main {
    grid-template-columns: 1fr 1fr 1fr 1fr;
 
    figure{
+      width: 25%;
       img{
 
       }
       figcaption{}
    }
+}
+
+.about {
+   grid-template-columns: 1fr 1fr 1fr;
+
+   p{}
 }
