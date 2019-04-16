@@ -25,7 +25,7 @@
    <!-- MY STYLES -->
    <link rel="stylesheet" type="text/css" media="screen" href="<?php echo get_template_directory_uri(); ?>/css/styles.css" />
    <!-- reCAPTCHA -->
-   <script src="https://www.google.com/recaptcha/api.js?render=6Ldqnp4UAAAAANApye5FXo-dX3meQGrFeNQFrCDh"></script>
+   <script src="https://www.google.com/recaptcha/api.js?render=6Ldqnp4UAAAAALqiDKdFCtEFspJ4g-IaGbYgTleN"></script>
   <script>
   grecaptcha.ready(function() {
       grecaptcha.execute('6Ldqnp4UAAAAALqiDKdFCtEFspJ4g-IaGbYgTleN', {action: 'action_name'}).then(function(token) {
