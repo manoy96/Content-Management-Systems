@@ -8,7 +8,9 @@ div.news-content {
         margin-right: 1rem;
         h2 {
             padding: 1rem 1rem 0 1rem;
-            span {}
+            text-align: center;
+            span {text-align: center;
+            }
         }
         p {
             // padding: 0 1rem 1rem 1rem;
@@ -17,9 +19,19 @@ div.news-content {
     .post-content-text {
         h3 {
             font-size: 20px;
+            color: $font;
             a {
                 text-decoration: none;
             }
         }
+        .news-content-excerpt {
+            .news-short-content {}
+            a {
+                background-color: $font;
+                padding: .45rem 1rem;
+                color: #fff;
+            }
+        }
+        
     }
 }
