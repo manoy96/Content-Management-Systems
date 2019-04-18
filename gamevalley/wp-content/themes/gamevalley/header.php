@@ -6,6 +6,8 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <!-- GOOGLE FONTS -->
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -13,8 +15,7 @@
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
    <!-- MY STYLES -->
    <link rel="stylesheet" type="text/css" media="screen" href="<?php echo get_template_directory_uri(); ?>/css/styles.css" />
-   <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
    <title>Game Valley<?php wp_title();?></title>
 </head>
 
@@ -49,24 +50,24 @@
       </div>
    </div> -->
 
-   <nav class="site-navigation">
-  <div class="container">
-    <div class="row">
-      <ul class="menu">
-        <li><a href="#">Code</a></li>
-         <li><a href="#">Cards</a></li>
-        <li><a href="#">Register</a></li>
-        <li><a href="#">Reviews</a></li>
-        <li><a href="#">Compare</a></li>
-      </ul>
-      <div class="nav-toggle">
-			  <span class="bar bar1"></span>
-			  <span class="bar bar2"></span>
-			  <span class="bar bar3"></span>
-      </div>
-    </div>
-  </div>
-</nav>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="http://gamevalley.space/">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="http://gamevalley.space/cards/">Cards</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="http://gamevalley.space/register/">Register</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="http://gamevalley.space/compare">Compare</a>
+  </li>
+</ul>
+
+
+
 
 <h1>Page Title</h1>
 
