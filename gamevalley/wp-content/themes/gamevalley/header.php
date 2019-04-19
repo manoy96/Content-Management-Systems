@@ -15,60 +15,33 @@
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
    <!-- MY STYLES -->
    <link rel="stylesheet" type="text/css" media="screen" href="<?php echo get_template_directory_uri(); ?>/css/styles.css" />
-   
+
    <title>Game Valley<?php wp_title();?></title>
 </head>
 
-<body>
+<body style="max-width: 1200px; margin: 0 auto;">
 
-
-
-   <div class="headwrap">
-      <header></header>
-   </div>
-
-<!-- NAV STARTS HERE -->
-<!-- <div id="navWrapper">
-	<nav class="clearfix">
-  		<button id="hamburgerBtn"></button>
-        
-        <?php //wp_nav_menu(array('menu_id' => 'primaryNav')); ?>
-
-
-		<div id="search">
-		<form method="get" action="/">
-			<input class="sfield" type="search" name="s" placeholder="search...">
-         <button class="sbtn" type="submit" value=""><i class="fas fa-search"></i></button>
-		</form>
-	</div>
-	</nav>
-</div>
-         <div class="search">
-            <input type="search" name="search" id="search" placeholder="Search...">
-            <button><i class="fas fa-search fa-2x"></i></button>
-         </div>
-      </div>
-   </div> -->
-
-
-<ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link active" href="http://gamevalley.space/">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="http://gamevalley.space/cards/">Cards</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="http://gamevalley.space/register/">Register</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="http://gamevalley.space/compare">Compare</a>
-  </li>
-</ul>
-
-
-
-
-<h1>Page Title</h1>
-
+   
+<nav class="navbar navbar-expand-lg text-light navbar-dark bg-dark" style="max-width: 1200px; margin: 0 auto;">
+  <h2><i class="fas fa-mountain"></i>Game Valley</h2>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://gamevalley.space/">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://gamevalley.space/cards/">Data</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://gamevalley.space/register/">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://gamevalley.space/compare/">Developer</a>
+      </li>
+    </ul>
+  </div>
+</nav>
    <main>

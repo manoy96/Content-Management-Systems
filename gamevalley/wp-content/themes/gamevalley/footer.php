@@ -1,5 +1,9 @@
 </main>
 
+   <nav class="navbar text-light navbar-dark bg-dark">
+   <span class="navbar-brand mb-0 mx-auto h1"><i class="fas fa-copyright"></i>2019 Manuel Espinoza</span>
+   </nav>
+
 
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
