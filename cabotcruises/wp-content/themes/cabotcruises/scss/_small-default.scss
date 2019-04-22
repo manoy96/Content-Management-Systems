@@ -1051,6 +1051,9 @@ h2#blog {
       }
    }
 }
+article.llgallery figure {
+   min-height: 300px;
+}
 
 .location {
    display: grid;

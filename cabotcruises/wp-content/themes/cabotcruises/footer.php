@@ -67,20 +67,40 @@
    <!-- SCRIPTS -->
    <script src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/company.js" type="application/ld+json">
    </script>
-   <script language="JavaScript" type="text/javascript" src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/jquery.js"></script>
-   <script language="JavaScript" type="text/javascript" src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/jquery-migrate.js"></script>
+   <!-- <script language="JavaScript" type="text/javascript" src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/jquery.js"></script> -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <!-- <script language="JavaScript" type="text/javascript" src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/jquery-migrate.js"></script> -->
    <script language="JavaScript" type="text/javascript" src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/slick/slick.min.js"></script>
    <script>
-      $('.mySlider').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    });
+   //    $( document ).ready(mySlick);
+   //    function mySlick() {
+
+   //    $('.mySlider').slick({
+   //      dots: true,
+   //      infinite: true,
+   //      speed: 500,
+   //      slidesToShow: 1,
+   //      slidesToScroll: 1
+   //  });
+   //    }
+
+   $(document).ready(function(){
+  $('#mySlider').slick({
+	lazyLoad: 'progressive',
+	dots: true,
+	arrows: false,
+	infinite: true,
+	speed: 1000,
+	cssEase: 'ease-out',
+	autoplay: true,
+	autoplaySpeed: 30000
+  });
+});
+
    </script>
    <script src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/scripts.js"></script>
-   <script src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/lazyload2.min.js"></script>
+   <!-- <script src="http://cabotcruises.manuelespin.com/wp-content/themes/cabotcruises/js/lazyload2.min.js"></script> -->
+   
 
 </body>
 

@@ -1,30 +1,30 @@
 <!-- <article class="gallery">
     <figure>
-        <img class="loaded" data-src="/sliders/1.jpg" alt="" src="/sliders/1.jpg"></figure>
+        <img class="loaded" class="lazy" data-src="/sliders/1.jpg" alt="" src="/sliders/1.jpg"></figure>
     <figure>
-        <img class="loaded" data-src="/sliders/2.jpg" alt="" src="/sliders/2.jpg"></figure>
+        <img class="loaded" class="lazy" data-src="/sliders/2.jpg" alt="" src="/sliders/2.jpg"></figure>
     <figure>
-        <img class="loaded" data-src="/sliders/3.jpg" alt="" src="/sliders/3.jpg"></figure>
+        <img class="loaded" class="lazy" data-src="/sliders/3.jpg" alt="" src="/sliders/3.jpg"></figure>
     <figure>
-        <img class="loaded" data-src="/sliders/4.jpg" alt="" src="/sliders/4.jpg"></figure>
+        <img class="loaded" class="lazy" data-src="/sliders/4.jpg" alt="" src="/sliders/4.jpg"></figure>
     <figure>
-        <img class="loaded" data-src="/sliders/5.jpg" alt="" src="/sliders/5.jpg"></figure>
+        <img class="loaded" class="lazy" data-src="/sliders/5.jpg" alt="" src="/sliders/5.jpg"></figure>
     <figure>
-        <img class="loaded" data-src="/sliders/6.jpg" alt="" src="/sliders/6.jpg"></figure>
+        <img class="loaded" class="lazy" data-src="/sliders/6.jpg" alt="" src="/sliders/6.jpg"></figure>
     <figure>
-        <img class="loaded" data-src="/sliders/7.jpg" alt="" src="/sliders/7.jpg"></figure>
+        <img class="loaded" class="lazy" data-src="/sliders/7.jpg" alt="" src="/sliders/7.jpg"></figure>
     <figure>
-        <img class="loaded" data-src="/sliders/8.jpg" alt="" src="/sliders/8.jpg"></figure>
+        <img class="loaded" class="lazy" data-src="/sliders/8.jpg" alt="" src="/sliders/8.jpg"></figure>
     <figure>
-        <img class="loaded" data-src="/sliders/9.jpg" alt="" src="/sliders/9.jpg"></figure>
+        <img class="loaded" class="lazy" data-src="/sliders/9.jpg" alt="" src="/sliders/9.jpg"></figure>
     <figure>
-        <img class="loaded" data-src="/sliders/10.jpg" alt="" src="/sliders/10.jpg"></figure>
+        <img class="loaded" class="lazy" data-src="/sliders/10.jpg" alt="" src="/sliders/10.jpg"></figure>
     <figure>
-        <img class="loaded" data-src="/sliders/11.jpg" alt="" src="/sliders/11.jpg"></figure>
+        <img class="loaded" class="lazy" data-src="/sliders/11.jpg" alt="" src="/sliders/11.jpg"></figure>
     <figure>
-        <img class="loaded" data-src="/sliders/11.jpg" alt="" src="/sliders/11.jpg"></figure>
+        <img class="loaded" class="lazy" data-src="/sliders/11.jpg" alt="" src="/sliders/11.jpg"></figure>
     <figure>
-        <img class="loaded" data-src="/sliders/12.jpg" alt="" src="/sliders/12.jpg"></figure>
+        <img class="loaded" class="lazy" data-src="/sliders/12.jpg" alt="" src="/sliders/12.jpg"></figure>
     </article> -->
 
 
@@ -37,33 +37,34 @@
 
 
 
-
-<article class="mygallery">
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@11.0.6/dist/lazyload.min.js"></script>
+<article class="llgallery">
     <figure>
-        <img data-src="/sliders/1.jpg" sizes="100vw" alt=""></figure>
+        <img class="lazy" data-src="/sliders/1.jpg" alt=""></figure>
     <figure>
-        <img data-src="/sliders/2.jpg" sizes="100vw" alt=""></figure>
+        <img class="lazy" data-src="/sliders/2.jpg" alt=""></figure>
     <figure>
-        <img data-src="/sliders/3.jpg" sizes="100vw" alt=""></figure>
+        <img class="lazy" data-src="/sliders/3.jpg" alt=""></figure>
     <figure>
-        <img data-src="/sliders/4.jpg" sizes="100vw" alt=""></figure>
+        <img class="lazy" data-src="/sliders/4.jpg" alt=""></figure>
     <figure>
-        <img data-src="/sliders/5.jpg" sizes="100vw" alt=""></figure>
+        <img class="lazy" data-src="/sliders/5.jpg" alt=""></figure>
     <figure>
-        <img data-src="/sliders/6.jpg" sizes="100vw" alt=""></figure>
+        <img class="lazy" data-src="/sliders/6.jpg" alt=""></figure>
     <figure>
-        <img data-src="/sliders/7.jpg" sizes="100vw" alt=""></figure>
+        <img class="lazy" data-src="/sliders/7.jpg" alt=""></figure>
     <figure>
-        <img data-src="/sliders/8.jpg" sizes="100vw" alt=""></figure>
+        <img class="lazy" data-src="/sliders/8.jpg" alt=""></figure>
     <figure>
-        <img data-src="/sliders/9.jpg" sizes="100vw" alt=""></figure>
+        <img class="lazy" data-src="/sliders/9.jpg" alt=""></figure>
     <figure>
-        <img data-src="/sliders/10.jpg" sizes="100vw" alt=""></figure>
+        <img class="lazy" data-src="/sliders/10.jpg" alt=""></figure>
     <figure>
-        <img data-src="/sliders/11.jpg" sizes="100vw" alt=""></figure>
+        <img class="lazy" data-src="/sliders/11.jpg" alt=""></figure>
     <figure>
-        <img data-src="/sliders/12.jpg" sizes="100vw" alt=""></figure>
+        <img class="lazy" data-src="/sliders/12.jpg" alt=""></figure>
 </article>
+<script>var lazyLoadInstance = new LazyLoad({theshold: 0,elements_selector: ".lazy"});</script>
 
 
 
@@ -508,3 +509,28 @@
         </tr>
     </tbody>
 </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mySlider" id="mySlider">
+        <picture><source srcset="/sliders/slider01h.jpg" media="(min-width: 29.25rem)"><img srcset="/sliders/slider01s.jpg" alt="slider">
+        </picture>         <picture><source srcset="/sliders/slider02h.jpg" media="(min-width: 29.25rem)"><img srcset="/sliders/slider02s.jpg" alt="slider">
+        </picture>
+<picture><source srcset="/sliders/slider03h.jpg" media="(min-width: 29.25rem)"><img srcset="/sliders/slider03s.jpg" alt="slider">
+        </picture>
+<picture><source srcset="/sliders/slider04h.jpg" media="(min-width: 29.25rem)"><img srcset="/sliders/slider04s.jpg" alt="slider">
+        </picture>
+<picture><source srcset="/sliders/slider05h.jpg" media="(min-width: 29.25rem)"><img srcset="/sliders/slider05s.jpg" alt="slider">
+        </picture></div>
+<!-- end slider -------------------- -->
