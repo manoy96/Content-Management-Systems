@@ -30,9 +30,9 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="http://gamevalley.space/">Home <span class="sr-only"></span></a>
+        <a class="nav-link" href="http://gamevalley.space/shop/">Shop <span class="sr-only"></span></a>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="http://gamevalley.space/cards/">Data</a>
       </li>
       <li class="nav-item">
@@ -40,7 +40,7 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="http://gamevalley.space/compare/">Developer</a>
-      </li>
+      </li> -->
     </ul>
   </div>
 </nav>
