@@ -1260,7 +1260,62 @@ form.woocommerce-ordering {
     border-radius: 5px;
 }
  
+div.coupon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
+    label {
+        padding: .5rem .5rem 0 .5rem;
+    }
+    input.input-text {
+        border: 1px solid $primaryColor;
+        padding-left: .75rem; 
+    }
+    button.button {
+        padding: .35rem .5rem;
+        margin: .5rem 0;
+        background-color: $secondaryColor;
+        border-radius: 5px;
+        color: #fff;
+    }
+}
+button.button {
+    background-color: $primaryColor;
+    color: #fff;
+    padding: .35rem .5rem;
+}
+
+table.shop_table {
+    tbody {
+        tr.cart-subtotal {padding: .5rem 0;}
+        tr.woocommerce-shipping-totals {
+            th {}
+            td {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: .65rem;
+
+                ul {
+                    padding-left: 0;
+                    li {list-style-type: none;}
+                }
+            }
+        }
+    }
+}
+div.wc-proceed-to-checkout {
+    a {
+        background-color: $accent;
+        border-radius: 5px;
+        padding: .5rem .75rem;
+        color: #fff;
+    }
+    .wcppec-checkout-buttons {
+
+    }
+}
 
 ul.products {
     width: 100%;
