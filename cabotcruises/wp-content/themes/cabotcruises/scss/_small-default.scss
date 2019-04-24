@@ -1051,6 +1051,7 @@ h2#blog {
       }
    }
 }
+
 article.llgallery figure {
    min-height: 300px;
 }
@@ -1105,6 +1106,65 @@ article.llgallery figure {
 
 // .slick-arrow {display: none; visibility: hidden;}
 
+.screen-reader-response {
+   color: rgb(206, 17, 17);
+
+   ul {
+      li {
+         list-style-type: none;
+      }
+   }
+}
+.wpcf7-validation-errors {display: none;}
+
+.wpcf7-form {
+   width: 45%;
+   p {
+      width: 100%;
+      input[type=submit] {
+         width: 100%;
+         background-color: $primaryColor;
+         border-radius: 5px;
+         padding: .8rem 2rem;
+         color: #fff;
+      }
+      label {
+         color: $primaryColor;
+
+         span {
+
+            input[type=text],
+            input[type=email],
+            input[type=tel],
+            input[type=number] {
+               width: 100%;
+               border: 1px solid $secondaryColor;
+               border-radius: 5px;
+               padding: .5rem;
+               height: 50px;
+            }
+
+            input[type=text] {}
+
+            input[type=email] {}
+
+            input[type=tel] {}
+
+            input[type=number] {width: 100%;}
+
+            
+         }
+
+         span.your-message {
+            textarea {
+               width: 100%;
+               border: 1px solid $secondaryColor;
+               border-radius: 5px;
+            }
+         }
+      }
+   }
+}
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
