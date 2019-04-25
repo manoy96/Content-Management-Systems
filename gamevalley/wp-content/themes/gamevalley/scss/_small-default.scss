@@ -1373,3 +1373,53 @@ td.product-name {
 td.product-price {padding: 0 .5rem;}
 td.product-quantity {padding: 0 .5rem;}
 td.product-subtotal {padding: 0 .5rem;}
+
+
+
+
+.entry-summary {
+
+    .price {margin: .5rem 0;}
+    .woocommerce-product-details__short-description {margin: .5rem 0;}
+    form.cart {
+        margin: .5rem 0;
+        .quantity {
+            label {}
+            input[type=number] {
+                border: 1px solid $primaryColor;
+                padding: 0 .75rem;
+                border-radius: 5px;
+            }
+        }
+        button {border-radius: 5px;}
+    }
+    div.product_meta {
+       display: flex;
+       flex-direction: column;
+    }
+ 
+ }
+ 
+ 
+//  .product_meta {
+//     display: flex;
+//     flex-direction: column;
+//  }
+ .single-product {
+     margin: 0 $gutter;
+ }
+//  .product {
+//     margin: 0 1rem;
+ 
+//     .woocommercce-product-gallery {}
+//     .summary {
+//        p.price {}
+//        div.woocommerce-product-details__short-description { p{}}
+//        form.cart {}
+//        div.product_meta {
+//           display: flex;
+//           flex-direction: column;
+//        }
+//     }
+//  }
+ 
